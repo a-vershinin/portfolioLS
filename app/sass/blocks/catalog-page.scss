@@ -1,0 +1,34 @@
+.catalog-page {
+  & .site-wrapper {
+    background: #849d8f;
+  }
+}
+.catalog-page {
+  & .user-block__basket  {
+    padding-left: 34px;
+    padding-right: 15px;
+    background-color: #fff;
+    color: $link2;
+    & span {
+      padding-left: 9px;
+      padding-right: 4px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 7px;
+      left: 15px;
+      background: transparent url("../img/icons/icon-basket-full.png") no-repeat center;
+    }
+    &:hover {
+      color: #000;
+      background-color: $link;
+      transition: background 0.8s ease 0s;
+      &::before {
+        background: transparent url("../img/icons/icon-basket-full.png") no-repeat center;
+      }
+    }
+  }
+}

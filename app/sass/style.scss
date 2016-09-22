@@ -1,0 +1,18 @@
+/* подключаем все кусочки кодов в главный файл*/
+
+
+/* Переменные и миксины*/
+@import "variables.scss";
+@import "mixins.scss";
+
+/* Глобальные стили для всего проекта*/
+@import "fonts.scss";
+@import "main.scss";
+
+/* Стили BEM-блоков*/
+// index.html
+@import "blocks/logo.scss";
+
+
+//catalog.html
+// @import "blocks/catalog-page.scss";

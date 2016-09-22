@@ -1,0 +1,59 @@
+.for-buyers {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 330px;
+  // width: 28.8%; //330
+  width: 48.85%; //560
+  margin-top: 36px;
+  float: left;
+  margin-right: 2.25%; //26
+  margin-top: 34px;
+  box-sizing: border-box;
+}
+.for-buyers__item {
+  float: left;
+  padding-left: 22px;
+  line-height: 21px;
+}
+.for-buyers__link {
+  display: inline-block;
+  vertical-align: top;
+  color: $link;
+  text-decoration: underline;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  font-family: $roboto-regular;
+  text-align: left;
+  transition: all 0.4s ease 0s;
+}
+.for-buyers__link {
+  position: relative;
+  & span {
+    font-weight: 700;
+    font-family: $roboto-bold;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: -20px;
+      width: 15px;
+      height: 13px;
+      background: url("../img/icons/icon-heart.svg") no-repeat;
+    }
+  }
+  & svg {
+    position: absolute;
+    top: 4px;
+    left: -20px;
+    fill: #f7f8f8;
+  }
+  &:hover {
+    color: $link-hover;
+  }
+  &:active {
+    color:   $link-active;
+  }
+}

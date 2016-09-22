@@ -1,0 +1,35 @@
+/*Переменные*/
+
+/* переменные цветом и типографики*/
+
+// $additional-color: #56C3B2;
+
+/*Шрифты*/
+$roboto-regular: "RobotoRegular", "Arial", sans-serif;
+$roboto-medium: "RobotoMedium", "Arial", sans-serif;
+$roboto-bold: "RobotoBold", "Arial", sans-serif;
+
+
+
+/*Цвета всех ссылок, прозрачный фон*/
+$color-gray-1:#727272;
+$color-gray-2:#212121;
+$color-gray-3:#b6b6b6;
+$color-green-1:#8cc34b;
+$color-blue-1:#03a9f4;
+
+$bg-color-1: #fff;
+$bg-color-2: #f6f7f2;
+$color-text-1: #fff;
+$color-text-2: rgba(255,255,255,0.7);
+
+$desktop-widths: "(max-width: 960px)";
+$tablet-widths: "(max-width: 768px)";
+$phone-widths: "(max-width: 480px)";
+
+$desktop-max-widths: 940px;
+$tablet-max-widths: 640px;
+$phone-max-widths: 420px;
+
+
+$retina: "(min-resolution: 144dpi), (min-resolution: 1.5dppx)";

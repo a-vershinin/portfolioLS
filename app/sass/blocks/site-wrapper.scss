@@ -1,0 +1,28 @@
+.site-wrapper {
+  background: #849d8f url("../img/pict/slide1@1x.png") no-repeat top center;
+  background-size: 100%;
+  transition: background-image 0.5s ease,
+              background-color 0.5s ease;
+  &::before, &::after {
+    content: "";
+    visibility: hidden;
+    background-image: url("../img/pict/slide2@1x.png") no-repeat;
+  }
+  &::after {
+    background-image: url("../img/pict/slide3@1x.png") no-repeat;
+  }
+}
+
+@media #{$retina} {
+  .site-wrapper {
+    background-image: url("../img/pict/slide1@2x.png");
+    background-size: 100%;
+    &::before, &::after {
+    background-image: url("../img/pict/slide2@2x.png");
+    background-size: 100%;
+    }
+    &::after {
+    background-image: url("../img/pict/slide3@2x.png");
+    }
+  }
+}
