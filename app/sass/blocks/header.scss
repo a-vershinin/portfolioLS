@@ -1,0 +1,48 @@
+.header {
+  min-height: 79px; //временно для сетки
+  color: $gray-2;
+  background-color: $bg-1;
+  background-color: #999;
+  margin-bottom: 150px;
+}
+.header__inner {
+  @include container();
+  @include clearfix();
+}
+.header__top {
+  @include clearfix();
+  background-color: $bg-1;
+}
+.header__logo {
+  float: left;
+  padding-top: 9px;
+  // min-width: 220px; // временно для сетки
+}
+.header__img {
+  display: block;
+  float: left;
+  margin-right: 20px;
+}
+.header__img img {
+  width: 60px;
+  height: 60px;
+}
+.header__desc {
+  max-width: 140px;
+  float: left;
+  padding-top: 15px;
+  font-size: 14px; // 14/18
+  line-height: 21px; // 21/14
+  // font-size: em(14);
+  font-weight: 400;
+  font-family: $firasans-regular;
+  color: $gray-2;
+}
+// @media #{$tablet-point-widths} {
+//
+//   .like {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//   }
+// }

@@ -11,8 +11,22 @@
 
 /* Стили BEM-блоков*/
 // index.html
-@import "blocks/logo.scss";
+@import "blocks/wrapper.scss";
+@import "blocks/header.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-content.scss";
+@import "blocks/page-wrapper.scss";
+@import "blocks/sidebar.scss";
+@import "blocks/nav.scss";
+@import "blocks/about.scss";
+@import "blocks/btn.scss";
+@import "blocks/footer.scss";
+@import "blocks/socials-links.scss";
 
 
 //catalog.html
 // @import "blocks/catalog-page.scss";
+
+
+/*Библиотеки*/
+@import "libs.scss";

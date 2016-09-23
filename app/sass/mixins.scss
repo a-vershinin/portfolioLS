@@ -1,24 +1,69 @@
 /* миксины*/
 @mixin clearfix() {
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     content: "";
     display: table;
     clear: both;
   }
 }
+
 @mixin container() {
-  width: 940px;
-  width: $desktop-max-widths;
+  width: $phone-inner-widths; //300
   margin: 0 auto;
   padding: 0 10px;
+  border: 2px solid lightgreen;
 
+  @media #{($tablet-point-widths)}{
+    width: $tablet-inner-widths; //480
+  }
+  @media #{($laptop-point-widths)} {
+    width: $laptop-inner-widths; //768
+    padding: 0 20px;
+  }
+  @media #{($desktop-point-width)} {
+    width: $desktop-inner-width; //940
+  }
 }
 
 @mixin ul-reset() {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@mixin inline-block($valign: top) {
+  display: inline-block;
+  vertical-align: $valign;
+}
+
+@mixin visually-hidden  {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin visually-view  {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: auto;
+  padding: auto;
+  border: auto;
+  clip: none;
+  overflow: auto;
+}
+
+@function em($target, $context: $font-size-base) {
+ @if $target == 0 {
+   @return 0;
+ }
+ @return $target / $context + em;
 }
 
 @media #{$retina} {

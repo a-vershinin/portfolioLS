@@ -2,34 +2,53 @@
 
 /* переменные цветом и типографики*/
 
-// $additional-color: #56C3B2;
-
 /*Шрифты*/
-$roboto-regular: "RobotoRegular", "Arial", sans-serif;
-$roboto-medium: "RobotoMedium", "Arial", sans-serif;
-$roboto-bold: "RobotoBold", "Arial", sans-serif;
+$firasans-regular: "FiraSansRegular", "Arial", sans-serif;
+$firasans-light: "FiraSansLight", "Arial", sans-serif;
+$firasans-medium: "FiraSansMedium", "Arial", sans-serif;
+$firasans-bold: "FiraSansBold", "Arial", sans-serif;
+
+/*Цвета, фон*/
+$gray-1:#727272;
+$gray-2:#414141;
+$gray-3:#5a5a5a;
+
+$light-1:#fff;
+$light-2:#f6f6f6;
+$light-3:#aeaeae;
+
+$blue-1:#33c1e3;
+$blue-2:#5d99c3;
+$blue-3:#4463a6;
+$blue-4:#6ac4d9;
+
+$red-1:#e85f61;
+
+$bg-1: #fff;
+$bg-2: #f6f7f2;
+
+/*размер шрифта*/
+$font-size-base: 18px;
+$lin-height-base: 26px/$font-size-base;
 
 
-
-/*Цвета всех ссылок, прозрачный фон*/
-$color-gray-1:#727272;
-$color-gray-2:#212121;
-$color-gray-3:#b6b6b6;
-$color-green-1:#8cc34b;
-$color-blue-1:#03a9f4;
-
-$bg-color-1: #fff;
-$bg-color-2: #f6f7f2;
-$color-text-1: #fff;
-$color-text-2: rgba(255,255,255,0.7);
-
-$desktop-widths: "(max-width: 960px)";
-$tablet-widths: "(max-width: 768px)";
-$phone-widths: "(max-width: 480px)";
-
-$desktop-max-widths: 940px;
-$tablet-max-widths: 640px;
-$phone-max-widths: 420px;
+/*брейкпоинты*/
+$desktop-point-width: "(min-width: 1040px)";
+$laptop-point-widths: "(min-width: 828px)";
+$tablet-point-widths: "(min-width: 520px)";
+$phone-point-widths: "(min-width: 320px)";
 
 
+/*макс-ширина на устройствах*/
+$desktop-max-widths: 1200px;
+$laptop-max-widths: 992px;
+$tablet-max-widths: 768px;
+
+/*ширины контейнера*/
+$desktop-inner-width: 940px;
+$laptop-inner-widths: 768px;
+$tablet-inner-widths: 480px;
+$phone-inner-widths: 300px;
+
+/*Ретина*/
 $retina: "(min-resolution: 144dpi), (min-resolution: 1.5dppx)";
