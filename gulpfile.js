@@ -139,7 +139,7 @@ gulp.task("js-common", function() {
 });
 // Оптимизируем js-библиотеки
 gulp.task("js-libs", function() {
-  return gulp.src("bower_modules/**/*.js") //берём все файлы .js в bower_modules
+  return gulp.src("app/bower_modules/**/*.js") //берём все файлы .js в bower_modules
   .pipe(concat("libs.min.js"))
   .pipe(uglify())  //cжимаем libs.min.js
   .pipe(gulp.dest("build/js")); //выгружаем в build/js
@@ -151,6 +151,13 @@ gulp.task("css-libs", function() {
   .pipe(rename("libs.min.css")) //переименовываем файл style в libs.min.css
   .pipe(gulp.dest("build/css")) //выгружаем в build/css
 });
+//Шрифты с css-библиотек
+gulp.task("icon-symbols", function() {
+  return gulp.src("app/bower_modules/**/*.{woff,woff2,svg,otf,eot,ttf}") //берём файл в app/bower_modules
+  .pipe(gulp.dest("build/fonts/")) //выгружаем в build/css/
+});
+
+
 // Собираем папку BUILD
 gulp.task("build", function (fn) {
   run(
@@ -163,6 +170,7 @@ gulp.task("build", function (fn) {
     "js-libs",
     "css-libs",
     "extras",
+    "icon-symbols",
     fn
   );
 });

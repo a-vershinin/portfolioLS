@@ -12,10 +12,10 @@
   width: $phone-inner-widths; //300
   margin: 0 auto;
   padding: 0 10px;
-  border: 2px solid lightgreen;
 
   @media #{($tablet-point-widths)}{
     width: $tablet-inner-widths; //480
+    padding: 0;
   }
   @media #{($laptop-point-widths)} {
     width: $laptop-inner-widths; //768

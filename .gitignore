@@ -1,5 +1,5 @@
 node_modules/
-bower_modules/
+app/bower_modules
 .DS_Store
 Thumbs.db
 .idea

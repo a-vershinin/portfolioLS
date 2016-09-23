@@ -1,9 +1,11 @@
 .header {
-  min-height: 79px; //временно для сетки
+  // min-height: 79px; //временно для сетки
   color: $gray-2;
   background-color: $bg-1;
-  background-color: #999;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   margin-bottom: 150px;
+  position: relative;
+  z-index: 2;
 }
 .header__inner {
   @include container();
@@ -19,9 +21,12 @@
   // min-width: 220px; // временно для сетки
 }
 .header__img {
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
   float: left;
   margin-right: 20px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 .header__img img {
   width: 60px;
@@ -38,11 +43,17 @@
   font-family: $firasans-regular;
   color: $gray-2;
 }
-// @media #{$tablet-point-widths} {
-//
-//   .like {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-between;
-//   }
-// }
+@media #{$tablet-point-widths} {
+  .header__desc {
+    max-width: 275px;
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    font-family: $firasans-light;
+  }
+}
+
+@media #{$laptop-point-widths} {
+
+}
