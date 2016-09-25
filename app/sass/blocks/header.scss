@@ -3,7 +3,6 @@
   color: $gray-2;
   background-color: $bg-1;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  margin-bottom: 150px;
   position: relative;
   z-index: 2;
 }
@@ -21,10 +20,9 @@
   // min-width: 220px; // временно для сетки
 }
 .header__img {
-  display: inline-block;
-  vertical-align: middle;
+  @include inline-block($valign: top);
   float: left;
-  margin-right: 20px;
+  margin-right: 15px;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -35,6 +33,8 @@
 .header__desc {
   max-width: 140px;
   float: left;
+  display: inline-block;
+  vertical-align: top;
   padding-top: 15px;
   font-size: 14px; // 14/18
   line-height: 21px; // 21/14
@@ -52,8 +52,4 @@
     font-weight: 700;
     font-family: $firasans-light;
   }
-}
-
-@media #{$laptop-point-widths} {
-
 }

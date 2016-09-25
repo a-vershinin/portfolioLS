@@ -1,17 +1,114 @@
-.logo {
-  float: left;
+.sidebar {
+
+}
+.nav {
+  min-width: 100%;
+}
+.nav__list {
+  @include ul-reset();
+  font-size: 0;
+}
+.nav__item {
+  @include inline-block($valign: top);
+  font-size: 14px;
+  &:nth-child(n+2) {
+    margin-left: 20px;
+  }
+  &:nth-child(n+4) {
+    margin-left: 0;
+  }
+}
+.nav__link {
+  position: relative;
   display: block;
-  width: 155px;
-  height: 63px;
-  padding-top: 10px;
-  border-bottom: 0;
-}
-.logo__link {
+  padding: 18px 0;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.714;
   text-decoration: none;
+  font-family: $firasans-regular;
+  color: $gray-2;
   cursor: pointer;
-  background-color: transparent;
+  &:hover {
+    color: $blue-1;
+  }
+  &:active {
+    font-weight: 700;
+  }
+  &--active {
+    color: $blue-1;
+    font-weight: 700;
+    &.nav__link:before {
+      background-color: $blue-1;
+    }
+  }
 }
-.logo img {
-  max-width: 100%;
-  height: auto;
+
+@media #{$tablet-point-widths} {
+  .nav__item {
+    margin-right: 30px;
+    &:nth-child(n+2) {
+      margin-left: 0;
+    }
+  }
+  .nav__link {
+    padding-left: 25px;
+    font-size: 18px;
+    line-height: 1.333;
+    &::before {
+      position: absolute;
+      content: "";
+      top: 16px;
+      left: 0;
+      width: 18px;
+      height: 18px;
+      background-color: $gray-2;
+    }
+    &:hover {
+      &::before {
+        background-color: $blue-1;
+      }
+    }
+    &:active {
+      &::before {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+@media #{$laptop-point-widths} {
+  .nav__link {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin-top: 13px;
+    margin-bottom: 23px;
+  }
+}
+@media #{$desktop-point-widths} {
+  .sidebar {
+    float: left;
+    width: 220px;
+    margin-right: 20px;
+  }
+  .nav__item {
+    display: block;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+  .nav__link {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-right: 30px;
+    text-align: right;
+    background-color: orange;
+    box-sizing: border-box;
+    &--active {
+      border-right: 6px solid $blue-1;
+    }
+    &:active {
+      // border-right: 6px solid $blue-1;
+    }
+  }
 }

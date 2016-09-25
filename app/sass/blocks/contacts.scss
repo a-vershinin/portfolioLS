@@ -6,8 +6,6 @@
   margin-top: 9px;
 }
 .contacts__toggle {
-}
-.contacts__icon {
   float: right;
   margin-top: 16px;
   text-indent: -9999px;
@@ -36,7 +34,7 @@
   padding-left: 110px;
   padding-right: 20px;
   font-size: 18px;
-  line-height: 28px;
+  line-height: 1.555;
   text-decoration: none;
   color: $gray-2;
   font-weight: 300;
@@ -52,7 +50,6 @@
     font-weight: 700;
   }
 }
-// .contacts__link {
 .contacts__icon-view {
   content: "";
   position: absolute;
@@ -69,7 +66,6 @@
   //   height: 19px;
   // }
   &--mail {
-
     background: transparent url("../../img/icons/icon-letter.svg") no-repeat center;
   }
   &--tell {
@@ -104,12 +100,16 @@
   .contacts {
     max-width: 170px;
     width: auto;
+    // &:hover ~ .contacts__list {
+    //   background-color: red;
+    // }
   }
-  .contacts__icon {
+
+  .contacts__toggle {
     text-indent: 0px;
     background: none;
     font-size: 18px;
-    line-height: 28px;
+    line-height: 1.555;
     font-weight: 700;
     font-family: $firasans-bold;
     color: $blue-1;
@@ -117,9 +117,6 @@
     &:hover {
       color: $red-1;
       border-bottom: 1px dotted $red-1;
-      & .contacts__list {
-        display: block;
-      }
     }
   }
   .contacts__wrapper {
@@ -128,8 +125,8 @@
   .contacts__list {
     position: absolute;
     display: none;
-    top: -10px;
-    right: 5px;
+    top: 67px;
+    right: 4px;
     width: 193px;
     height: 143px;
     border: 1px solid #dedede;
@@ -171,6 +168,4 @@
   .contacts__icon-view {
     left: 20px;
   }
-
-
 }

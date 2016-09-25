@@ -21,7 +21,7 @@
     width: $laptop-inner-widths; //768
     padding: 0 20px;
   }
-  @media #{($desktop-point-width)} {
+  @media #{($desktop-point-widths)} {
     width: $desktop-inner-width; //940
   }
 }
