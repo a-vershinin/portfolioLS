@@ -13,9 +13,6 @@
   max-width: 140px;
   max-height: 140px;
 }
-.about__right {
-
-}
 .about__title {
   margin: 0;
   padding: 0;
@@ -43,7 +40,6 @@
 }
 .about__download {
   text-align: center;
-  padding-bottom: 30px;
 }
 .about__download-link {
   @include inline-block($valign: top);
@@ -62,45 +58,89 @@
   &:active {
   }
 }
-.about__download-icon {
-  display: inline-block;
-  vertical-align: top;
-  width: 14px;
-  height: 14px;
-  background: url("../img/icons/icon-download@1x.png")
-  no-repeat center;
-  background-size: cover;
-  margin-right: 5px;
-}
-.about__download-link {
-  &:hover {
-    .about__download-icon {
-      background-image: url("../img/icons/icon-download-hover@1x.png");
-    }
-  }
-}
-@media #{$retina} {
-  .about__download-link {
-    .about__download-icon {
-      background-image: url("../img/icons/icon-download@2x.png");
-    }
-    &:hover {
-      .about__download-icon {
-        background-image: url("../img/icons/icon-download-hover@2x.png");
-      }
-    }
-  }
-}
+// .about__download-icon {
+//   display: inline-block;
+//   vertical-align: top;
+//   width: 14px;
+//   height: 14px;
+//   background: url("../img/icons/icon-download@1x.png")
+//   no-repeat center;
+//   background-size: cover;
+//   margin-right: 5px;
+// }
+// .about__download-link {
+//   &:hover {
+//     .about__download-icon {
+//       background-image: url("../img/icons/icon-download-hover@1x.png");
+//     }
+//   }
+// }
+// @media #{$retina} {
+//   .about__download-link {
+//     .about__download-icon {
+//       background-image: url("../img/icons/icon-download@2x.png");
+//     }
+//     &:hover {
+//       .about__download-icon {
+//         background-image: url("../img/icons/icon-download-hover@2x.png");
+//       }
+//     }
+//   }
+// }
 @media #{$tablet-point-widths} {
   .about__photo img {
     max-width: 170px;
     max-height: 170px;
   }
+  .about__text {
+    padding: 0 20px;
+    // overflow-y: scroll;
+  }
 }
-
+@media #{$laptop-point-widths} {
+  .about {
+    @include clearfix();
+  }
+  .about__left {
+    float: left;
+    width: 248px;
+  }
+  .about__right {
+    float: right;
+    width: 480px;
+  }
+  .about__title {
+    text-align: left;
+  }
+  .about__text {
+    height: 300px;
+    overflow: auto;
+    padding-right: 47px;
+    padding-left: 0;
+    margin-bottom: 44px;
+  }
+  .about__download {
+    text-align: right;
+  }
+}
 @media #{$desktop-point-widths} {
   .about {
+    @include clearfix();
     float: right;
     width: 700px;
   }
+  .about__left {
+    width: 300px;
+    margin-right: 20px;
+  }
+  .about__photo {
+  }
+  .about__photo img {
+    max-width: 220px;
+    max-height: 220px;
+  }
+  .about__right {
+    width: 380px;
+  }
+
 }

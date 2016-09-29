@@ -1,0 +1,20 @@
+.wrapper-inner {
+  background-color: $bg-2;
+  color: $gray-2;
+  padding-bottom: 30px;
+}
+@media #{$tablet-point-widths} {
+  .wrapper-inner {
+    padding-bottom: 90px;
+  }
+}
+@media #{$laptop-point-widths} {
+  .wrapper-inner {
+    padding-bottom: 50px;
+  }
+}
+@media #{$desktop-point-widths} {
+  .wrapper-inner {
+    padding-bottom: 72px;
+  }
+}

@@ -6,8 +6,8 @@
 }
 .social__link {
   @include inline-block($valign: top);
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 31px;
   margin-right: 8px;
   margin-bottom: 8px;
   font-size: 0;
@@ -64,5 +64,12 @@
         background-image: url("../img/icons/icon-tv-hover@2x.png");
       }
     }
+  }
+}
+
+
+@media #{$tablet-point-widths} {
+  .social__link {
+    margin-bottom: 0;
   }
 }

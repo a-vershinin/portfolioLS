@@ -1,9 +1,0 @@
-.page-wrapper {
-  @include container();
-}
-
-@media #{$desktop-point-widths} {
-  .page-wrapper {
-    @include clearfix();
-  }
-}

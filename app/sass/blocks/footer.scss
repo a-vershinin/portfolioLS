@@ -17,3 +17,35 @@
 }
 .footer__socials {
 }
+
+@media #{$tablet-point-widths} {
+  .footer {
+    height: 94px;
+    margin-top: -94px;
+  }
+  .footer__copyright {
+    padding-top: 14px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+  }
+}
+@media #{$laptop-point-widths} {
+  .footer {
+    height: 49px;
+    margin-top: -49px;
+  }
+  .footer__wrapper {
+    @include clearfix();
+    @include container();
+  }
+  .footer__copyright {
+    padding: 14px 0;
+    max-width: 414px;
+    float: left;
+  }
+  .footer__socials {
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 9px;
+  }
+}

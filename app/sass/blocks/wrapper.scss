@@ -2,11 +2,27 @@
   min-height: 100%;
   overflow: hidden;
   position: relative;
+  background-color: $bg-2;
 }
 .wrapper {
   &::after {
     content: "";
     display: block;
     height: 114px;
+  }
+}
+
+@media #{$tablet-point-widths} {
+  .wrapper {
+    &::after {
+      height: 94px;
+    }
+  }
+}
+@media #{$laptop-point-widths} {
+  .wrapper {
+    &::after {
+      height: 49px;
+    }
   }
 }

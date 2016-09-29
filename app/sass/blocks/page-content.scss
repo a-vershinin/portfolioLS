@@ -1,9 +1,9 @@
 .page-content {
-  background-color: $bg-2;
-  color: $gray-2;
+  @include container();
 }
+
 @media #{$desktop-point-widths} {
   .page-content {
-    padding-top: 24px;
+    @include clearfix();
   }
 }
