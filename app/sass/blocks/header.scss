@@ -31,10 +31,8 @@
 .header__desc {
   max-width: 140px;
   float: left;
-  display: inline-block;
-  vertical-align: top;
-  padding-top: 15px;
-  font-size: 14px; // 14/18
+  @include inline-block($valign: middle);
+  font-size: 14px;
   line-height: 1.5; // 21
   font-weight: 400;
   font-family: $firasans-regular;
@@ -43,10 +41,15 @@
 @media #{$tablet-point-widths} {
   .header__desc {
     max-width: 275px;
-    padding-top: 20px;
+    padding-top: 15px;
     font-size: 18px;
-    line-height: 28px;
+    line-height: 1.555; //28
     font-weight: 700;
     font-family: $firasans-light;
+  }
+}
+@media #{$desktop-point-widths} {
+  .header {
+    margin-bottom: 25px;
   }
 }

@@ -12,11 +12,10 @@
   line-height: 33px;
   // font-family: "FontAwesome";
   // content: "\f095";
-  background: url("../../img/icons/icon-phon.svg") no-repeat right center;
-  background-size: 40%;
+  background: url("../img/icons/icon-phon.svg") no-repeat right center;
   cursor: pointer;
   &:hover {
-    // background: url("../../img/icons/icon-phon-red.svg") no-repeat right center;
+    background: url("../img/icons/icon-phon-red.svg") no-repeat right center;
   }
 }
 .contacts__list {
@@ -55,19 +54,11 @@
   left: 80px;
   width: 19px;
   height: 19px;
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 19px;
-  //   height: 19px;
-  // }
   &--mail {
     background: transparent url("../img/icons/icon-letter.svg") no-repeat center;
   }
   &--tell {
-    background: transparent url("../img/icons/icon-phon.svg") no-repeat center;
+    background: transparent url("../img/icons/icon-phon-small.svg") no-repeat center;
   }
   &--sk {
     background: transparent url("../img/icons/icon-sk.svg") no-repeat center;
@@ -106,10 +97,6 @@
       }
     }
   }
-
-
-
-
   .contacts__toggle {
     text-indent: 0px;
     background: none;
@@ -122,6 +109,7 @@
     &:hover {
       color: $red-1;
       border-bottom: 1px dotted $red-1;
+      background: none;
     }
   }
   .contacts__wrapper {

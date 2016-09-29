@@ -95,6 +95,10 @@
   .about__text {
     padding: 0 20px;
     // overflow-y: scroll;
+    & p {
+      font-size: 18px;
+      line-height: 1.444; // 26
+    }
   }
 }
 @media #{$laptop-point-widths} {
@@ -142,5 +146,4 @@
   .about__right {
     width: 380px;
   }
-
 }
