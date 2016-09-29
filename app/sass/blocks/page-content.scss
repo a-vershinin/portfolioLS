@@ -2,3 +2,8 @@
   background-color: $bg-2;
   color: $gray-2;
 }
+@media #{$desktop-point-widths} {
+  .page-content {
+    padding-top: 24px;
+  }
+}

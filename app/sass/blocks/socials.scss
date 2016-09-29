@@ -1,0 +1,68 @@
+.socials {
+  max-width: 220px;
+  font-size: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+.social__link {
+  @include inline-block($valign: top);
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  font-size: 0;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 50%;
+  &:last-child {
+    margin-right: 0;
+  }
+  &--fb {
+    background-image: url("../img/icons/icon-fb@1x.png");
+    // background-position: 0;
+  }
+  &--vk {
+    background-image: url("../img/icons/icon-vk@1x.png");
+  }
+  &--tw {
+    background-image: url("../img/icons/icon-tv@1x.png");
+  }
+  &:hover {
+    &.social__link--fb {
+      background-image: url("../img/icons/icon-fb-hover@1x.png");
+    }
+    &.social__link--vk {
+      background-image: url("../img/icons/icon-vk-hover@1x.png");
+    }
+    &.social__link--tw {
+      background-image: url("../img/icons/icon-tv-hover@1x.png");
+    }
+  }
+}
+
+@media #{$retina} {
+  .social__link {
+    &--fb {
+      background-image: url("../img/icons/icon-fb@2x.png");
+    }
+    &--vk {
+      background-image: url("../img/icons/icon-vk@2x.png");
+    }
+    &--tw {
+      background-image: url("../img/icons/icon-tv@2x.png");
+    }
+    &:hover {
+      &.social__link--fb {
+        background-image: url("../img/icons/icon-fb-hover@2x.png");
+      }
+      &.social__link--vk {
+        background-image: url("../img/icons/icon-vk-hover@2x.png");
+      }
+      &.social__link--tw {
+        background-image: url("../img/icons/icon-tv-hover@2x.png");
+      }
+    }
+  }
+}

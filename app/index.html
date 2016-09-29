@@ -17,6 +17,7 @@
   <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16"> -->
   <!-- CSS-->
+  <!-- <link href="css/font-awesome.css" rel="stylesheet"> -->
   <link href="css/libs.css" rel="stylesheet">
   <link href="fonts/font-awesome/font-awesome.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
@@ -106,26 +107,38 @@
           </nav>
         </aside>
         <main class="about">
-          <div class="about__photo">
-            <img src="img/content/about-me@1x.png" width="220" height="220" alt="фото">
+          <div class="about__left">
+            <div class="about__photo">
+              <img src="img/content/about-me@1x.png" width="220" height="220" alt="фото">
+            </div>
           </div>
-          <div class="about__desc">
+          <div class="about__right">
             <h2 class="about__title">Обо мне</h2>
-            <p class="about__text">
-              Меня зовут Костя. Проживаю на Юге Башкортостана, с
-              появлением интернета, с головой увлёкся этой темой,
-              и теперь уже почти живу Он-Лайн.
-            </p>
-            <p class="about__text">
-              С недавних пор (уже года два), это уже не просто увлечение,
-              но и нормальный заработок для меня и моей семьи, на этом
-              конечно не собираюсь останавливаться, а буду стараться добиться
-              ещё больших результатов!
-            </p>
-            <p class="about__text">Интернет сообщество очень интересно</p>
-            </p>
+            <div class="about__text">
+              <p>
+                Меня зовут Костя. Проживаю на Юге Башкортостана, с
+                появлением интернета, с головой увлёкся этой темой,
+                и теперь уже почти живу Он-Лайн.
+              </p>
+              <p>
+                С недавних пор (уже года два), это уже не просто увлечение,
+                но и нормальный заработок для меня и моей семьи, на этом
+                конечно не собираюсь останавливаться, а буду стараться добиться
+                ещё больших результатов!
+              </p>
+              <p>Интернет сообщество очень интересно и многогранно,
+                почти каждый день появляется что то новое и хочется всё это
+                изучить, внедрить и проверить на себе, многое получается, и
+                со временем приносит свои плоды.
+              </p>
+            </div>
+            <div class="about__download">
+              <a href="#" class="about__download-link">
+                <i class="fa fa-download about__download-icon"></i>
+                <span class="about__download-text">Скачать резюме</span>
+              </a>
+            </div>
           </div>
-          <a href="#" class="about__btn-download  btn"></a>
         </main>
       </div>
     </section>
@@ -133,20 +146,16 @@
 
   <footer class="footer">
     <div class="footer__wrapper">
-      <p class="footer__copyright">
+      <div class="footer__copyright">
         &copy; Дизайн сайта был разработан в школе LoftSchool
-      </p>
-      <p class="footer__socials">
-        <span class="socials-links">
-          <a href="#" class="social-link social-link--fb">Я в Фейсбуке</a>
-        </span>
-        <span class="socials-links">
-          <a href="#" class="social-link social-link--vk">Я в Вконтакте</a>
-        </span>
-        <span class="socials-links">
-          <a href="#" class="social-link social-link--tw">Я в Твитере</a>
-        </span>
-      </p>
+      </div>
+      <div class="footer__socials">
+        <div class="socials">
+          <a href="#" class="social__link social__link--fb">Я в Фейсбуке</a>
+          <a href="#" class="social__link social__link--vk">Я в Вконтакте</a>
+          <a href="#" class="social__link social__link--tw">Я в Твитере</a>
+        </div>
+      </div>
     </div>
     <!-- end container -->
   </footer>

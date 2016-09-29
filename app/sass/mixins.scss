@@ -13,15 +13,15 @@
   margin: 0 auto;
   padding: 0 10px;
 
-  @media #{($tablet-point-widths)}{
+  @media screen and #{($tablet-point-widths)}{
     width: $tablet-inner-widths; //480
     padding: 0;
   }
-  @media #{($laptop-point-widths)} {
+  @media screen and #{($laptop-point-widths)} {
     width: $laptop-inner-widths; //768
     padding: 0 20px;
   }
-  @media #{($desktop-point-widths)} {
+  @media screen and #{($desktop-point-widths)} {
     width: $desktop-inner-width; //940
   }
 }

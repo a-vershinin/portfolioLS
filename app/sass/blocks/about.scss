@@ -1,3 +1,103 @@
+.about {
+  text-align: center;
+}
+.about__left {
+  margin-bottom: 15px;
+}
+.about__photo {
+  @include inline-block($valign: top);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.about__photo img {
+  max-width: 140px;
+  max-height: 140px;
+}
+.about__right {
+
+}
+.about__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+  font-size: 35px;
+  line-height: 1.285; // 45
+  font-weight: 500;
+  font-family: $firasans-medium;
+  text-align: center;
+  color: $gray-2;
+}
+.about__text {
+  margin-bottom: 22px;
+  & p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.5; // 24
+    font-weight: 300;
+    font-family: $firasans-light;
+    text-align: left;
+    color: $gray-4;
+  }
+}
+.about__download {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.about__download-link {
+  @include inline-block($valign: top);
+  padding: 8px 20px;
+  font-size: 14px;
+  font-family: $firasans-bold;
+  text-decoration: none;
+  border: 2px solid $red-1;
+  border-radius: 40px;
+  color: $red-1;
+  background-color: $bg-2;
+  &:hover {
+    color: $light-1;
+    background-color: $red-1;
+  }
+  &:active {
+  }
+}
+// .about__download-icon {
+//   display: inline-block;
+//   vertical-align: top;
+//   width: 14px;
+//   height: 14px;
+//   background: url("../img/icons/icon-download@1x.png")
+//   no-repeat center;
+//   background-size: cover;
+//   margin-right: 5px;
+// }
+// .about__download-link {
+//   &:hover {
+//     .about__download-icon {
+//       background-image: url("../img/icons/icon-download-hover@1x.png");
+//     }
+//   }
+// }
+// @media #{$retina} {
+//   .about__download-link {
+//     .about__download-icon {
+//       background-image: url("../img/icons/icon-download@2x.png");
+//     }
+//     &:hover {
+//       .about__download-icon {
+//         background-image: url("../img/icons/icon-download-hover@2x.png");
+//       }
+//     }
+//   }
+// }
+@media #{$tablet-point-widths} {
+  .about__photo img {
+    max-width: 170px;
+    max-height: 170px;
+  }
+}
+
 @media #{$desktop-point-widths} {
   .about {
     float: right;
