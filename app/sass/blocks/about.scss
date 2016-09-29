@@ -62,35 +62,35 @@
   &:active {
   }
 }
-// .about__download-icon {
-//   display: inline-block;
-//   vertical-align: top;
-//   width: 14px;
-//   height: 14px;
-//   background: url("../img/icons/icon-download@1x.png")
-//   no-repeat center;
-//   background-size: cover;
-//   margin-right: 5px;
-// }
-// .about__download-link {
-//   &:hover {
-//     .about__download-icon {
-//       background-image: url("../img/icons/icon-download-hover@1x.png");
-//     }
-//   }
-// }
-// @media #{$retina} {
-//   .about__download-link {
-//     .about__download-icon {
-//       background-image: url("../img/icons/icon-download@2x.png");
-//     }
-//     &:hover {
-//       .about__download-icon {
-//         background-image: url("../img/icons/icon-download-hover@2x.png");
-//       }
-//     }
-//   }
-// }
+.about__download-icon {
+  display: inline-block;
+  vertical-align: top;
+  width: 14px;
+  height: 14px;
+  background: url("../img/icons/icon-download@1x.png")
+  no-repeat center;
+  background-size: cover;
+  margin-right: 5px;
+}
+.about__download-link {
+  &:hover {
+    .about__download-icon {
+      background-image: url("../img/icons/icon-download-hover@1x.png");
+    }
+  }
+}
+@media #{$retina} {
+  .about__download-link {
+    .about__download-icon {
+      background-image: url("../img/icons/icon-download@2x.png");
+    }
+    &:hover {
+      .about__download-icon {
+        background-image: url("../img/icons/icon-download-hover@2x.png");
+      }
+    }
+  }
+}
 @media #{$tablet-point-widths} {
   .about__photo img {
     max-width: 170px;
