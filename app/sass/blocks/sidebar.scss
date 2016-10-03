@@ -1,6 +1,16 @@
 .sidebar {
 
 }
+@media #{$tablet-point-widths} {
+  .sidebar {
+    margin-bottom: 40px;
+  }
+}
+@media #{$laptop-point-widths} {
+  .sidebar {
+    margin-bottom: 0;
+  }
+}
 @media #{$desktop-point-widths} {
   .sidebar {
     float: left;
