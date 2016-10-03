@@ -24,6 +24,7 @@
 .contacts__item {
   display: block;
   border-bottom: 1px solid rgba(90,90,90,.1);
+  word-wrap: break-word;
 }
 .contacts__link {
   position: relative;

@@ -1,23 +1,23 @@
 .nav {
+  margin-bottom: 18px;
 }
 .nav__list {
   @include ul-reset();
   font-size: 0;
+  white-space: nowrap;
 }
 .nav__item {
   @include inline-block($valign: top);
   font-size: 14px;
+  word-wrap: break-word;
   &:nth-child(n+2) {
     margin-left: 20px;
-  }
-  &:nth-child(n+4) {
-    margin-left: 0;
   }
 }
 .nav__link {
   position: relative;
   display: block;
-  padding: 18px 0;
+  padding: 10px 0;
   margin-bottom: 5px;
   font-size: 14px;
   font-weight: 400;
@@ -37,43 +37,36 @@
     font-weight: 700;
   }
 }
-
+.nav__link {
+  & .nav__link-icon{
+    display: none;
+  }
+}
+.nav__link-text {
+  padding: 0;
+  margin: 0;
+}
 @media #{$tablet-point-widths} {
+  .nav {
+    margin-bottom: 35px;
+  }
   .nav__item {
-    margin-right: 30px;
     &:nth-child(n+2) {
-      margin-left: 0;
-    }
-    &:nth-child(1) {
-      & .nav__link:before {
-        content: "\f21b";
-      }
-    }
-    &:nth-child(2) {
-      & .nav__link:before {
-        content: "\f135";
-      }
-    }
-    &:nth-child(3) {
-      & .nav__link:before {
-        content: "\f0b1";
-      }
+      margin-left: 30px;
     }
   }
   .nav__link {
-    padding: 10px 0;
-    padding-left: 25px;
-    margin-top: 13px;
-    margin-bottom: 30px;
+    @include clearfix();
     font-size: 18px;
     line-height: 1.333;
-    &::before {
-      position: absolute;
-      font-family: "FontAwesome";
-      top: 9px;
-      left: 0;
-      width: 18px;
-      height: 18px;
+    & .nav__link-icon{
+      @include inline-block($valign: middle);
+      float: left;
+      line-height: 23px;
+      padding-right: 10px;
+    }
+    & .nav__link-text {
+      float: left;
     }
     &:hover {
       &::before {
@@ -92,50 +85,31 @@
     }
   }
 }
-
-@media #{$laptop-point-widths} {
-  .nav__link {
-    margin-bottom: 30px;
-  }
-}
 @media #{$desktop-point-widths} {
 
   .nav__item {
     display: block;
-    margin-right: 0;
-    box-sizing: border-box;
-    &:nth-child(1){
-      & .nav__link:before {
-        left: 95px;
-      }
-    }
-    &:nth-child(2){
-      & .nav__link:before {
-        left: 29px;
-      }
-    }
-    &:nth-child(3){
-      & .nav__link:before {
-        left: 65px;
-      }
+    &:nth-child(n+2) {
+      margin-left: 0;
     }
   }
   .nav__link {
     padding: 11px 20px 11px 0;
     margin-bottom: 0;
-    margin-top: 0;
     text-align: right;
-    // background-color: orange;
     box-sizing: border-box;
     border-right: 6px solid transparent;
-    &:before {
-      top: 10px;
-    }
     &--active {
       border-right-color: $blue-1;
     }
     &:active {
       border-right-color: $blue-1;
+    }
+    & .nav__link-icon {
+      float: none;
+    }
+    & .nav__link-text {
+      float: none;
     }
   }
 }

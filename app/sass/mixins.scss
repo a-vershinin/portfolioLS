@@ -23,6 +23,7 @@
   }
   @media screen and #{($desktop-point-widths)} {
     width: $desktop-inner-width; //940
+    padding: 0;
   }
 }
 

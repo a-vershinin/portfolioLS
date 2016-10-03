@@ -42,6 +42,7 @@
   text-align: center;
 }
 .about__download-link {
+  @include clearfix();
   @include inline-block($valign: top);
   padding: 8px 20px;
   font-size: 14px;
@@ -57,44 +58,25 @@
   }
   &:active {
   }
+  & .about__download-icon {
+    @include inline-block($valign: middle);
+    float: left;
+    line-height: 20px;
+    padding-right: 10px;
+  }
+  .about__download-text {
+    float: left;
+  }
 }
-// .about__download-icon {
-//   display: inline-block;
-//   vertical-align: top;
-//   width: 14px;
-//   height: 14px;
-//   background: url("../img/icons/icon-download@1x.png")
-//   no-repeat center;
-//   background-size: cover;
-//   margin-right: 5px;
-// }
-// .about__download-link {
-//   &:hover {
-//     .about__download-icon {
-//       background-image: url("../img/icons/icon-download-hover@1x.png");
-//     }
-//   }
-// }
-// @media #{$retina} {
-//   .about__download-link {
-//     .about__download-icon {
-//       background-image: url("../img/icons/icon-download@2x.png");
-//     }
-//     &:hover {
-//       .about__download-icon {
-//         background-image: url("../img/icons/icon-download-hover@2x.png");
-//       }
-//     }
-//   }
-// }
 @media #{$tablet-point-widths} {
   .about__photo img {
     max-width: 170px;
     max-height: 170px;
   }
   .about__text {
+    height: 370px;
     padding: 0 20px;
-    // overflow-y: scroll;
+    overflow-y: scroll;
     & p {
       font-size: 18px;
       line-height: 1.444; // 26
@@ -117,11 +99,11 @@
     text-align: left;
   }
   .about__text {
-    height: 300px;
+    height: 325px;
     overflow: auto;
-    padding-right: 47px;
+    padding-right: 20px;
     padding-left: 0;
-    margin-bottom: 44px;
+    margin-bottom: 45px;
   }
   .about__download {
     text-align: right;
