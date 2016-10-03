@@ -11,7 +11,7 @@
 }
 .header__top {
   @include clearfix();
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   background-color: $bg-1;
 }
 .header__logo {
@@ -21,7 +21,7 @@
 .header__img {
   @include inline-block($valign: top);
   float: left;
-  margin-right: 15px;
+  margin-right: 17px;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -33,7 +33,7 @@
   @include inline-block($valign: middle);
   max-width: 140px;
   float: left;
-  padding-top: 14px;
+  padding-top: 9px;
   font-size: 14px;
   line-height: 1.5; // 21
   font-weight: 400;
@@ -42,11 +42,14 @@
 }
 @media #{$tablet-point-widths} {
   .header__top {
-    margin-bottom: 28px;
+    margin-bottom: 18px;
+  }
+  .header__img {
+    margin-right: 20px;
   }
   .header__desc {
     max-width: 275px;
-    padding-top: 15px;
+    padding-top: 18px;
     font-size: 18px;
     line-height: 1.555; //28
     font-weight: 700;
@@ -57,4 +60,5 @@
   .header {
     margin-bottom: 25px;
   }
+
 }

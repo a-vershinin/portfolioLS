@@ -2,8 +2,8 @@
   position: relative;
   float: right;
   width: 60px;
-  min-height: 62px;
-  margin-top: 10px;
+  min-height: 60px;
+  margin-top: 6px;
 }
 .contacts__toggle {
   float: right;
@@ -90,6 +90,9 @@
   .contacts {
     max-width: 170px;
     width: auto;
+    margin-right: 40px;
+    margin-top: 12px;
+
     &:hover {
       ~ .contacts__wrapper {
         .contacts__list {
@@ -120,7 +123,7 @@
     position: absolute;
     display: none;
     top: 67px;
-    right: 4px;
+    right: 44px;
     width: 193px;
     height: 143px;
     border: 1px solid #dedede;
@@ -161,5 +164,13 @@
   }
   .contacts__icon-view {
     left: 20px;
+  }
+}
+@media #{$desktop-point-widths} {
+  .contacts {
+    margin-right: -2px;
+  }
+  .contacts__list {
+    right: 4px;
   }
 }
