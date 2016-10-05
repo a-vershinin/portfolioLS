@@ -90,7 +90,6 @@
   .contacts {
     max-width: 170px;
     width: auto;
-    margin-right: 40px;
     margin-top: 12px;
 
     &:hover {
@@ -123,14 +122,14 @@
     position: absolute;
     display: none;
     top: 67px;
-    right: 44px;
+    right: 0;
     width: 193px;
     height: 143px;
     border: 1px solid #dedede;
     border-radius: 10px;
     box-sizing: border-box;
     background-color: $bg-1;
-    z-index: 5;
+    z-index: 15;
   }
   .contacts__list::before,
   .contacts__list::after {
@@ -167,10 +166,5 @@
   }
 }
 @media #{$desktop-point-widths} {
-  .contacts {
-    margin-right: -2px;
-  }
-  .contacts__list {
-    right: 4px;
-  }
+
 }

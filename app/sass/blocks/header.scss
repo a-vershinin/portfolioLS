@@ -19,8 +19,7 @@
   padding-top: 10px;
 }
 .header__img {
-  @include inline-block($valign: top);
-  float: left;
+  @include inline-block($valign: middle);
   margin-right: 17px;
   border-radius: 50%;
   overflow: hidden;
@@ -32,8 +31,6 @@
 .header__desc {
   @include inline-block($valign: middle);
   max-width: 140px;
-  float: left;
-  padding-top: 9px;
   font-size: 14px;
   line-height: 1.5; // 21
   font-weight: 400;
@@ -49,7 +46,6 @@
   }
   .header__desc {
     max-width: 275px;
-    padding-top: 18px;
     font-size: 18px;
     line-height: 1.555; //28
     font-weight: 700;

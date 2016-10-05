@@ -1,5 +1,13 @@
 .nav {
   margin-bottom: 5px;
+  &--no-active {
+    .nav__link {
+      &--active {
+        color: $gray-2;
+        font-weight: 400;
+      }
+    }
+  }
 }
 .nav__list {
   @include ul-reset();
@@ -68,11 +76,6 @@
     & .nav__link-text {
       float: left;
     }
-    // &:hover {
-    //   &::before {
-    //     color: $blue-1;
-    //   }
-    // }
     &:active {
       &::before {
         font-weight: 400;

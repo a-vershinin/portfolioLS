@@ -56,7 +56,6 @@
     &:after {
       border-color: $blue-6;
     }
-
   }
 }
 .career__item:hover * {
@@ -129,8 +128,8 @@
     float: right;
   }
   .career__item {
-    // @include inline-block($valign: top);
-    max-width: 356px;
+    @include inline-block($valign:top);
+    float: right;
     margin-left: auto;
     margin-right: 0;
   }
@@ -139,13 +138,36 @@
     width: 356px;
     padding: 15px 20px;
     box-sizing: border-box;
-    &:after {
+    z-index: 1;
+    &:after, &:before {
       content: "";
       display: block;
       position: absolute;
       width: 1px;
       background-color: $bg-5;
-      left: -20px;
+      left: -23px;
+    }
+    &:after {
+      bottom: -22px;
+      top: 50%;
+    }
+    &:before {
+      bottom: 50%;
+      top: 0;
+    }
+  }
+  .career__item:first-child {
+    .career__block {
+      &:before {
+        width: 0;
+      }
+    }
+  }
+  .career__item:last-child {
+    .career__block {
+      &:after {
+        width: 0;
+      }
     }
   }
   .career__suptitle {
@@ -169,6 +191,7 @@
       border-radius: 50%;
       background-color: $blue-1;
       border: 5px solid $light-2;
+      z-index: 5;
     }
   }
   .career__item:hover  {
@@ -178,5 +201,18 @@
         border-color: $blue-6;
       }
     }
+  }
+}
+@media #{$desktop-point-widths} {
+  .career {
+    width: 700px;
+    float: right;
+  }
+  .career__pict img {
+    width: 220px;
+    height: 220px;
+  }
+  .career__block {
+    width: 380px;
   }
 }
