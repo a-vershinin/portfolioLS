@@ -10,8 +10,6 @@
   margin-top: 16px;
   text-indent: -9999px;
   line-height: 33px;
-  // font-family: "FontAwesome";
-  // content: "\f095";
   background: url("../img/icons/icon-phon.svg") no-repeat right center;
   cursor: pointer;
   &:hover {
@@ -55,14 +53,18 @@
   left: 80px;
   width: 19px;
   height: 19px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
   &--mail {
-    background: transparent url("../img/icons/icon-letter.svg") no-repeat center;
+    background-image: url("../img/icons/icon-letter.svg");
   }
   &--tell {
-    background: transparent url("../img/icons/icon-phon-small.svg") no-repeat center;
+    background-image: url("../img/icons/icon-phon-small.svg");
   }
   &--sk {
-    background: transparent url("../img/icons/icon-sk.svg") no-repeat center;
+    background-image: url("../img/icons/icon-sk.svg");
   }
 }
 
@@ -108,10 +110,10 @@
     font-weight: 700;
     font-family: $firasans-bold;
     color: $blue-1;
-    border-bottom: 1px dotted $blue-1;
+    border-bottom: 3px dotted $blue-1;
     &:hover {
       color: $red-1;
-      border-bottom: 1px dotted $red-1;
+      border-bottom: 3px dotted $red-1;
       background: none;
     }
   }
@@ -149,7 +151,7 @@
     width: auto;
     margin: 0;
     border: 0;
-    border-bottom: 1px solid #dedede;
+    border-bottom: 1px solid rgba(90,90,90,.1);
     &:last-child {
       border-bottom: 0;
     }

@@ -8,6 +8,12 @@
       }
     }
   }
+  &--portfolio {
+    margin-bottom: 17px;
+  }
+  &--career {
+    margin-bottom: 2px;
+  }
 }
 .nav__list {
   @include ul-reset();
@@ -57,6 +63,17 @@
 @media #{$tablet-point-widths} {
   .nav {
     margin-bottom: 25px;
+    &--no-active {
+      .nav__link {
+        &--active {
+          color: $blue-1;
+          font-weight: 700;
+        }
+      }
+    }
+    &--portfolio {
+      margin-bottom: 0;
+    }
   }
   .nav__item {
     &:nth-child(n+2) {
@@ -88,8 +105,14 @@
     }
   }
 }
+@media #{$laptop-point-widths} {
+  .nav {
+    &--portfolio {
+      margin-bottom: 5px;
+    }
+  }
+}
 @media #{$desktop-point-widths} {
-
   .nav__item {
     display: block;
     &:nth-child(n+2) {

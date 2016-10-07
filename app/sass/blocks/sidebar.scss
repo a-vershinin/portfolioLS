@@ -4,6 +4,12 @@
 @media #{$tablet-point-widths} {
   .sidebar {
     margin-bottom: 40px;
+    &--portfolio {
+      margin-bottom: 5px;
+    }
+    &--career {
+      margin-bottom: 25px;
+    }
   }
 }
 @media #{$laptop-point-widths} {

@@ -45,7 +45,7 @@
   <svg display="none"></svg> <!-- svg спрайт -->
 
   <div class="wrapper">
-    <div class="wrapper-inner">
+    <div class="wrapper-inner wrapper-inner--portfolio">
       <header class="header">
         <div class="header__inner">
           <h1 class="visually-hidden">Портфолио Loftschool - учебный макет</h1>
@@ -53,7 +53,7 @@
             <div class="header__logo">
               <div class="header__img">
                 <a href="index.html">
-                  <img src="img/content/logo@1x.png" alt="фото">
+                  <img src="img/content/logo@1x.png" alt="фото" title="Логотип">
                 </a>
               </div>
               <div class="header__desc">Константин Константинов</div>
@@ -89,9 +89,8 @@
         </div>
       </header>
       <section class="page-content">
-        <!-- <div class="page-wrapper"> -->
-          <aside class="sidebar">
-            <nav class="nav">
+          <aside class="sidebar sidebar--portfolio">
+            <nav class="nav nav--portfolio">
               <ul class="nav__list">
                 <li class="nav__item">
                   <a href="index.html" class="nav__link">
@@ -116,16 +115,70 @@
             </nav>
           </aside>
           <main class="portfolio">
-            <div class="portfolio__left">
-              <div class="portfolio__photo">
-                <img src="img/content/about-me@1x.png" alt="фото">
+            <h2 class="portfolio__title">Портфолио</h2>
+            <section class="portfolio__block">
+              <div class="portfolio__item">
+                <div class="portfolio__img">
+                  <img src="img/content/work1@1x.jpg" alt="Работа">
+                </div>
+                <div class="portfolio__info">
+                  <h4 class="portfolio__caption">Deals App</h4>
+                  <div class="portfolio__text">Продажа одежды</div>
+                  <div class="portfolio__type">
+                    <i class="portfolio__icon portfolio__icon--mobile"></i>
+                    Приложение</div>
+                </div>
               </div>
-            </div>
-            <div class="portfolio__right">
-              <h2>Здесь будут мои работы</h2>
-            </div>
+              <div class="portfolio__item">
+                <div class="portfolio__img">
+                  <img src="img/content/work2@1x.jpg" alt="Работа">
+                </div>
+                <div class="portfolio__info">
+                  <h4 class="portfolio__caption">Dream-scapes</h4>
+                  <div class="portfolio__text">Лагуна Люфтганза</div>
+                  <div class="portfolio__type">
+                    <i class="portfolio__icon portfolio__icon--desktop"></i>
+                    Лендинг</div>
+                </div>
+              </div>
+              <div class="portfolio__item">
+                <div class="portfolio__img">
+                  <img src="img/content/work3@1x.jpg" alt="Работа">
+                </div>
+                <div class="portfolio__info">
+                  <h4 class="portfolio__caption">Creative studio</h4>
+                  <div class="portfolio__text">Танцевальная студия</div>
+                  <div class="portfolio__type">
+                    <i class="portfolio__icon portfolio__icon--desktop"></i>
+                    Корпоративный сайт</div>
+                </div>
+              </div>
+              <div class="portfolio__item">
+                <div class="portfolio__img">
+                  <img src="img/content/work4@1x.jpg" alt="Работа">
+                </div>
+                <div class="portfolio__info">
+                  <h4 class="portfolio__caption">Studio Frog</h4>
+                  <div class="portfolio__text">Мебельный магазин</div>
+                  <div class="portfolio__type">
+                    <i class="portfolio__icon portfolio__icon--desktop"></i>
+                    Лендинг</div>
+                </div>
+              </div>
+              <div class="portfolio__item">
+                <div class="portfolio__img">
+                  <img src="img/content/work5@1x.jpg" alt="Работа">
+                </div>
+                <div class="portfolio__info">
+                  <h4 class="portfolio__caption">Carbonara</h4>
+                  <div class="portfolio__text">Итальянсий ресторан</div>
+                  <div class="portfolio__type">
+                    <i class="portfolio__icon portfolio__icon--desktop"></i>
+                    Лендинг</div>
+                </div>
+              </div>
+            </section>
           </main>
-        <!-- </div> -->
       </section>
     </div>
   </div>
@@ -147,12 +200,6 @@
   </footer>
 
   <div class="modal-feedback"></div>
-  <!--[if lt IE 9]>
-  <script src="libs/html5shiv/es5-shim.min.js"></script>
-  <script src="libs/html5shiv/html5shiv.min.js"></script>
-  <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
-  <script src="libs/respond/respond.min.js"></script>
-  <![endif]-->
 
   <!-- Query -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>

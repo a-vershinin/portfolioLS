@@ -1,6 +1,6 @@
 .career__title {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 6px;
   text-align: center;
   font-size: 35px;
   line-height: 1.285; //45
@@ -10,7 +10,7 @@
 }
 .career__left {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 .career__pict {
   @include inline-block($valign: top);
@@ -20,7 +20,7 @@
 .career__pict img {
   display: block;
   width: 220px;
-  height: 220px;
+  height: 218px;
   background-color: $bg-4;
   border-radius: 9px;
 }
@@ -29,13 +29,13 @@
   font-size: 0;
 }
 .career__item {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   text-align: right;
   font-size: 0;
   cursor: pointer;
 }
 .career__block {
-  padding: 20px;
+  padding: 17px 22px 13px;
   text-align: left;
   font-size: 18px;
   line-height: 1.444; //26
@@ -62,7 +62,6 @@
   color: $light-1;
 }
 .career__suptitle {
-  margin-bottom: 5px;
   font-size: 18px;
   line-height: 1.444; //26
   font-weight: 400;
@@ -88,7 +87,10 @@
 }
 @media #{$tablet-point-widths} {
   .career__title {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+  }
+  .career__left {
+
   }
   .career__pict {
     max-width: 230px;
@@ -102,6 +104,7 @@
     max-width: 438px;
     margin-right: 20px;
     margin-left: 20px;
+    margin-bottom: 25px;
   }
   .career__suptitle {
     font-size: 21px;
