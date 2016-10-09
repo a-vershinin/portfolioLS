@@ -37,6 +37,7 @@
   font-weight: 300;
   font-family: $firasans-light;
   box-sizing: border-box;
+  transition: all 0.3s ease 0s;
 }
 .contacts__link {
   &:hover {
@@ -76,9 +77,6 @@
     display: block;
     float: left;
     width: 50%;
-    &:nth-child(even) {
-      margin-right: 0;
-    }
   }
   .contacts__link {
     padding-left: 65px;
@@ -132,6 +130,9 @@
     box-sizing: border-box;
     background-color: $bg-1;
     z-index: 15;
+    &:hover {
+      display: block;
+    }
   }
   .contacts__list::before,
   .contacts__list::after {

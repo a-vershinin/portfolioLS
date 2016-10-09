@@ -1,0 +1,88 @@
+.hello {
+  @include container();
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  &::before {
+    content: "";
+    height: 100%;
+    width: 0;
+  }
+}
+.hello__block {
+  position: relative;
+  @include inline-block($valign: middle);
+  max-width: 354px;
+  width: 93.75%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.hello__pick {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 105px;
+  height: 105px;
+  font-size: 0;
+  background-image: url("../img/content/pre-avatar@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hello__title {
+  margin: 0;
+  padding: 0 22%;
+  padding-top: 64px;
+  padding-bottom: 20px;
+  color: $gray-2;
+  font-size: 21px;
+  line-height: 1.333;  //28
+  font-family: $opensanssemi-bold;
+  font-weight: 600;
+  text-align: center;
+}
+.hello__btn {
+  background-color: $blue-1;
+  text-align: center;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.hello__link {
+  @include inline-block($valign: top);
+  margin: 19px 0;
+  padding: 0 14px;
+  font-size: 14px;
+  line-height: 37px; // 2
+  font-family: $firasans-bold;
+  font-weight: 700;
+  text-decoration: none;
+  color: $light-1;
+  border: 2px solid $bg-1;
+  border-radius: 20px;
+  box-sizing: border-box;
+  &:hover {
+    color: $blue-1;
+    border-color: $light-1;
+    background-color: $bg-1;
+  }
+}
+@media #{$tablet-point-widths} {
+  .hello__block {
+    max-width: 354px;
+  }
+}
+@media #{$desktop-point-widths} {
+  .hello__block {
+    max-width: 300px;
+  }
+  .hello__pick {
+    width: 140px;
+    height: 140px;
+  }
+  .hello__title {
+    padding-top: 90px;
+  }
+}

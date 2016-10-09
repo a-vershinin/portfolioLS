@@ -8,6 +8,22 @@
   &--career {
     padding-bottom: 0;
   }
+  &--hello {
+    padding-bottom: 0;
+    background-color: transparent;
+  }
+  &--hello {
+    height: auto;
+    overflow: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $bg-2;
+    background-image: url("../img/bg/bg3@1x.png");
+    text-align: center;
+  }
 }
 @media #{$tablet-point-widths} {
   .wrapper-inner {
@@ -18,12 +34,21 @@
     &--career {
       padding-bottom: 0;
     }
+    &--hello {
+      padding-bottom: 0;
+    }
   }
 }
 @media #{$laptop-point-widths} {
   .wrapper-inner {
     padding-bottom: 50px;
     &--portfolio {
+      padding-bottom: 0;
+    }
+    &--hello {
+      padding-bottom: 0;
+    }
+    &--hello {
       padding-bottom: 0;
     }
   }

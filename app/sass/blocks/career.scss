@@ -45,6 +45,7 @@
   background-color: $bg-1;
   border-radius: 10px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: all 1s ease 0s;
 }
 .career__item:hover  {
   .career__block {

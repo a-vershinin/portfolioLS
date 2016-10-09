@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width-device-width, initial-scale=1, maximum-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <title>Портфолио</title>
+  <title>Обо мне</title>
   <!-- SEO -->
   <meta name="description" content="ls-web-test">
   <meta name="keywords" content="ls-web-test">
@@ -45,20 +45,17 @@
   <svg display="none"></svg> <!-- svg спрайт -->
 
   <div class="wrapper">
-    <div class="wrapper-inner wrapper-inner--portfolio">
+    <div class="wrapper-inner">
       <header class="header">
         <div class="header__inner">
           <h1 class="visually-hidden">Портфолио Loftschool - учебный макет</h1>
           <div class="header__top">
             <div class="header__logo">
               <div class="header__img">
-                <a href="index.html">
-                  <img src="img/content/logo@1x.png" alt="фото" title="Логотип">
-                </a>
+                <a href="index.html"><img src="img/content/logo@1x.png" alt="фото"></a>
               </div>
               <div class="header__desc">Константин Константинов</div>
             </div>
-
             <div class="contacts  contacts--closed contacts--nojs">
               <a class="contacts__toggle">Мои контакты</a>
             </div>
@@ -89,11 +86,11 @@
         </div>
       </header>
       <section class="page-content">
-          <aside class="sidebar sidebar--portfolio">
-            <nav class="nav nav--portfolio">
+          <aside class="sidebar">
+            <nav class="nav">
               <ul class="nav__list">
                 <li class="nav__item">
-                  <a href="about.html" class="nav__link">
+                  <a class="nav__link nav__link--active">
                     <i class="nav__link-icon fa fa-user-secret"></i>
                     <span class="nav__link-text">Обо мне</span>
                   </a>
@@ -105,79 +102,52 @@
                   </a>
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link nav__link--active">
+                  <a href="portfolio.html" class="nav__link">
                     <i class="nav__link-icon fa fa-briefcase"></i>
                     <span class="nav__link-text">Портфолио</span>
                   </a>
                 </li>
-                </li>
               </ul>
             </nav>
           </aside>
-          <main class="portfolio">
-            <h2 class="portfolio__title">Портфолио</h2>
-            <section class="portfolio__block">
-              <div class="portfolio__item">
-                <div class="portfolio__img">
-                  <img src="img/content/work1@1x.jpg" alt="Работа">
-                </div>
-                <div class="portfolio__info">
-                  <h4 class="portfolio__caption">Deals App</h4>
-                  <div class="portfolio__text">Продажа одежды</div>
-                  <div class="portfolio__type">
-                    <i class="portfolio__icon portfolio__icon--mobile"></i>
-                    Приложение</div>
-                </div>
+          <main class="about">
+            <div class="about__left">
+              <div class="about__photo">
+                <img src="img/content/about-me@1x.png" alt="фото">
               </div>
-              <div class="portfolio__item">
-                <div class="portfolio__img">
-                  <img src="img/content/work2@1x.jpg" alt="Работа">
-                </div>
-                <div class="portfolio__info">
-                  <h4 class="portfolio__caption">Dream-scapes</h4>
-                  <div class="portfolio__text">Лагуна Люфтганза</div>
-                  <div class="portfolio__type">
-                    <i class="portfolio__icon portfolio__icon--desktop"></i>
-                    Лендинг</div>
-                </div>
+            </div>
+            <div class="about__right">
+              <h2 class="about__title">Обо мне</h2>
+              <div class="about__text">
+                <p>
+                  Меня зовут Костя. Проживаю на Юге Башкортостана, с
+                  появлением интернета, с головой увлёкся этой темой,
+                  и теперь уже почти живу Он-Лайн.
+                </p>
+                <p>
+                  С недавних пор (уже года два), это уже не просто увлечение,
+                  но и нормальный заработок для меня и моей семьи, на этом
+                  конечно не собираюсь останавливаться, а буду стараться добиться
+                  ещё больших результатов!
+                </p>
+                <p>Интернет сообщество очень интересно и многогранно,
+                  почти каждый день появляется что то новое и хочется всё это
+                  изучить, внедрить и проверить на себе, многое получается, и
+                  со временем приносит свои плоды.
+                </p>
+                <p>Интернет сообщество очень интересно и многогранно,
+                  почти каждый день появляется что то новое и хочется всё это
+                  изучить, внедрить и проверить на себе, многое получается, и
+                  со временем приносит свои плоды.
+                </p>
               </div>
-              <div class="portfolio__item">
-                <div class="portfolio__img">
-                  <img src="img/content/work3@1x.jpg" alt="Работа">
-                </div>
-                <div class="portfolio__info">
-                  <h4 class="portfolio__caption">Creative studio</h4>
-                  <div class="portfolio__text">Танцевальная студия</div>
-                  <div class="portfolio__type">
-                    <i class="portfolio__icon portfolio__icon--desktop"></i>
-                    Корпоративный сайт</div>
-                </div>
+              <div class="about__download">
+                <a href="#" class="about__download-link">
+                  <i class="fa fa-download about__download-icon"></i>
+                  <span class="about__download-text">Скачать резюме</span>
+                </a>
               </div>
-              <div class="portfolio__item">
-                <div class="portfolio__img">
-                  <img src="img/content/work4@1x.jpg" alt="Работа">
-                </div>
-                <div class="portfolio__info">
-                  <h4 class="portfolio__caption">Studio Frog</h4>
-                  <div class="portfolio__text">Мебельный магазин</div>
-                  <div class="portfolio__type">
-                    <i class="portfolio__icon portfolio__icon--desktop"></i>
-                    Лендинг</div>
-                </div>
-              </div>
-              <div class="portfolio__item">
-                <div class="portfolio__img">
-                  <img src="img/content/work5@1x.jpg" alt="Работа">
-                </div>
-                <div class="portfolio__info">
-                  <h4 class="portfolio__caption">Carbonara</h4>
-                  <div class="portfolio__text">Итальянсий ресторан</div>
-                  <div class="portfolio__type">
-                    <i class="portfolio__icon portfolio__icon--desktop"></i>
-                    Лендинг</div>
-                </div>
-              </div>
-            </section>
+            </div>
           </main>
       </section>
     </div>
@@ -196,7 +166,6 @@
         </div>
       </div>
     </div>
-    <!-- end container -->
   </footer>
 
   <div class="modal-feedback"></div>

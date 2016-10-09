@@ -24,6 +24,7 @@
   @include inline-block($valign: top);
   font-size: 14px;
   word-wrap: break-word;
+
   &:nth-child(n+2) {
     margin-left: 20px;
   }
@@ -40,6 +41,7 @@
   font-family: $firasans-regular;
   color: $gray-2;
   cursor: pointer;
+  transition: all 0.3s ease 0s;
   &:hover {
     color: $blue-1;
   }
@@ -77,21 +79,22 @@
   }
   .nav__item {
     &:nth-child(n+2) {
-      margin-left: 26px;
+      margin-left: 29px;
     }
   }
   .nav__link {
     @include clearfix();
-    font-size: 18px;
+    font-size: 0;
     line-height: 1.333;
     & .nav__link-icon{
-      @include inline-block($valign: middle);
-      float: left;
-      line-height: 23px;
-      padding-right: 10px;
+      @include inline-block($valign: top);
+      font-size: 18px;
+      line-height: 20px;
+      padding-right: 8px;
     }
     & .nav__link-text {
-      float: left;
+      @include inline-block($valign: bottom);
+      font-size: 18px;
     }
     &:active {
       &::before {
@@ -130,17 +133,6 @@
     }
     &:active {
       border-right-color: $blue-1;
-    }
-    & .nav__link-icon {
-      float: none;
-    }
-    & .nav__link-text {
-      float: none;
-    }
-    & .nav__link-icon{
-      @include inline-block($valign: top);
-      padding-right: 3px;
-      font-size: 19px;
     }
   }
 }

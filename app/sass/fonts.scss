@@ -32,6 +32,29 @@
 	font-weight: normal;
 	font-style: normal;
 }
+/* font-family: "OpenSansBold"; */
+@font-face {
+	font-family: "OpenSansBold";
+	src: url("../fonts/OpenSansBold/OpenSans-Bold.woff") format("woff"),
+	url("../fonts/OpenSansBold/OpenSans-Bold.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+/* font-family: "OpenSansBold"; */
+@font-face {
+	font-family: "OpenSansSemibold";
+	src: url("../fonts/OpenSansSemibold/OpenSans-Semibold.woff") format("woff"),
+	url("../fonts/OpenSansSemibold/OpenSans-Semibold.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+
+
+
+/* font-family: "FontAwesome"; */
 @font-face {
   font-family: "FontAwesome";
   src: url("../fonts/font-awesome/fonts/fontawesome-webfont.eot?v=4.6.3");

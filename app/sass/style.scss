@@ -10,7 +10,9 @@
 @import "main.scss";
 
 /* Стили BEM-блоков*/
-// index.html
+//index.html
+@import "blocks/hello.scss";
+// about.html
 @import "blocks/wrapper.scss";
 @import "blocks/wrapper-inner.scss";
 @import "blocks/header.scss";
@@ -23,8 +25,6 @@
 @import "blocks/footer.scss";
 @import "blocks/footer-wrapper.scss";
 @import "blocks/socials.scss";
-
-
 //career.html
 @import "blocks/career.scss";
 //portfolio.html

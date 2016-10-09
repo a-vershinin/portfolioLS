@@ -3,8 +3,6 @@
   overflow: hidden;
   position: relative;
   background-color: $bg-2;
-}
-.wrapper {
   &::after {
     content: "";
     display: block;

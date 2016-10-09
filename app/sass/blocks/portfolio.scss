@@ -90,6 +90,9 @@
   .portfolio {
     font-size: 0;
   }
+  .portfolio__block {
+    margin-left: -20px;
+  }
   .portfolio__img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -100,11 +103,8 @@
   .portfolio__item {
     @include inline-block($valign: top);
     width: 230px;
-    margin-right: 20px;
+    margin-left: 20px;
     box-sizing: border-box;
-    &:nth-child(even) {
-      margin-right: 0;
-    }
   }
   .portfolio__img img {
     width: 228px;
@@ -136,12 +136,6 @@
   }
   .portfolio__item {
     width: 228px;
-    &:nth-child(even) {
-      margin-right: 20px;
-    }
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
   }
   .portfolio__info {
     padding: 17px 18px;
