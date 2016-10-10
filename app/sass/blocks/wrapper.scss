@@ -8,6 +8,22 @@
     display: block;
     height: 114px;
   }
+  &--hello {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $bg-2;
+    background-image: url("../img/bg/bg3@1x.png");
+    text-align: center;
+    &::before {
+      content: "";
+      @include inline-block($valign: middle);
+      height: 100%;
+      width: 0;
+    }
+  }
 }
 
 @media #{$tablet-point-widths} {

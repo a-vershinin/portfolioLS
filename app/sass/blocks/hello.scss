@@ -12,8 +12,8 @@
   }
 }
 .hello__block {
-  position: relative;
   @include inline-block($valign: middle);
+  position: relative;
   max-width: 354px;
   width: 93.75%;
   background-color: #fff;
