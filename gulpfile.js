@@ -70,7 +70,7 @@ gulp.task("JsChange", function () {
     .pipe(server.reload({stream: true}));
 });
 
-gulp.task("serve",  function() {
+gulp.task("serve", function() {
   server.init({
     server: "build",
     notify: false,
@@ -87,11 +87,11 @@ gulp.task("serve",  function() {
 // ====================================================
 // ================= Сборка проекта BUILD =============
 // Чистка папки
-gulp.task("clean", function () {
+gulp.task("clean", function() {
   return del("build");
 });
 // Копируем файлы из App в папку build
-gulp.task("copy", function () {
+gulp.task("copy", function() {
   return gulp.src([
     "app/fonts/**/*.{woff,woff2}",
     "app/img/**/*",
@@ -103,7 +103,7 @@ gulp.task("copy", function () {
     .pipe(gulp.dest("build"));
 });
 // Оптимизация картинок
-gulp.task("images", function () {
+gulp.task("images", function() {
   return gulp.src("build/img/**/*.{png,jpg,gif}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
@@ -121,8 +121,15 @@ gulp.task("svg-symbols", function() {
     .pipe(rename("svg-symbols.svg"))
     .pipe(gulp.dest("build/img"));
 });
-// Остальные файлы, такие как favicon.ico и пр.
-gulp.task("extras", function () {
+// Копируем favicons
+gulp.task("favicons", function() {
+  return gulp.src([
+    "app/favicons/*.*"
+  ])
+  .pipe(gulp.dest("build/favicons"));
+});
+// Остальные файлы и пр.
+gulp.task("extras", function() {
   return gulp.src([
     "app/*.*",
     "!app/*.html"
@@ -163,7 +170,7 @@ gulp.task("icon-symbols", function() {
 
 
 // Собираем папку BUILD
-gulp.task("build", function (fn) {
+gulp.task("build", function(fn) {
   run(
     "clean",
     "copy",
@@ -173,6 +180,7 @@ gulp.task("build", function (fn) {
     "js-common",
     "js-libs",
     "css-libs",
+    "favicons",
     "extras",
     "icon-symbols",
     fn

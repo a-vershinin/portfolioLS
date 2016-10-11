@@ -24,6 +24,12 @@
       color: $red-1;
     }
   }
+  &--animated {
+    &:hover {
+      transition: all .6s;
+      transform: scale(1.05);
+    }
+  }
 }
 .portfolio__img {
   @include inline-block($valign: top);

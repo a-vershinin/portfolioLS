@@ -42,7 +42,17 @@
     браузер. Пожалуйста <a href="http://browsehappy.com/">обновите</a> его.</p>
   [endif] -->
 
-  <svg display="none"></svg> <!-- svg спрайт -->
+  <svg display="none">
+    <symbol id="icon-download" viewBox="0 0 14 14"><text data-name="&#xF019;" class="cls-1" x="6.867" y="13.467"><tspan x="6.867">&#xF019;</tspan></text></symbol>
+    <symbol id="icon-fb" viewBox="0 0 30.344 30"><path class="cls-1" d="M641.171 70A15 15 0 1 1 626 85a15.086 15.086 0 0 1 15.171-15zm-3.314 14.9h1.272v6.2h2.823v-6.2h1.994l.542-2.3h-2.653a1.714 1.714 0 0 1 .186-1.316 1.553 1.553 0 0 1 1.033-.325 2.8 2.8 0 0 1 1.333.5l.572-2.029a8.308 8.308 0 0 0-2.36-.519 4.283 4.283 0 0 0-2 .4 2.278 2.278 0 0 0-1.069 1.17 3.829 3.829 0 0 0-.327 1.814v.3H637.9z" transform="translate(-626 -70)"/></symbol>
+    <symbol id="icon-mail" viewBox="0 0 19 15"><text data-name="&#xF0E0;" class="cls-1" x="-.133" y="13.466">&#xF0E0;</text></symbol>
+    <symbol id="icon-phon-red" viewBox="0 0 32 32"><text data-name="&#xF095;" class="cls-1" x="-.133" y="32.467">&#xF095;</text></symbol>
+    <symbol id="icon-phon" viewBox="0 0 32 32"><text data-name="&#xF095;" class="cls-1" x="-.133" y="32.467">&#xF095;</text></symbol>
+    <symbol id="icon-sk" viewBox="0 0 16 17"><text data-name="&#xF17E;" class="cls-1" x="-.133" y="15.467">&#xF17E;</text></symbol>
+    <symbol id="icon-tell" viewBox="0 0 15 16"><text data-name="&#xF095;" class="cls-1" x="-.133" y="15.467">&#xF095;</text></symbol>
+    <symbol id="icon-tv" viewBox="0 0 30.344 30"><path class="cls-1" d="M717.552 70a15 15 0 1 1-15.171 15 15.087 15.087 0 0 1 15.171-15zm-6.98 17.04a13.266 13.266 0 0 0 2.625.612 1.491 1.491 0 0 0 1.735-.652.311.311 0 0 0-.084-.482s-2.942-.324-2.718-.835c0 0-.014-.288.392-.223 0 0 .568-1.031.343-1.162 0 0-.35-.289-.07-.315 0 0 .825.1 1.091.17 0 0 .182-.062.014-.18a.9.9 0 0 1-.392-.436s.1-.223.546-.039c0 0 .25-.253.124-.383 0 0-.378-.21-.2-.38 0 0 .854-1 1.805.58 0 0 .239.3.267.013 0 0 1.164-3.1 2.691-3.35a.869.869 0 0 0 .588-.053.779.779 0 0 1 .571-.025.229.229 0 0 0 .308.079s.6-.223.421.144a2.776 2.776 0 0 1-.787.609c-.211.012-.168.278.014.3 0 0 2.52.17 2.52 1.926 0 0 .147.417.623-.015a5.333 5.333 0 0 1 .9-.45s.2-.118.168.158a3.287 3.287 0 0 1-1.051 1.075s-.322.38.14.3a2.97 2.97 0 0 0 .66-.2s.546-.249.294.2a7.216 7.216 0 0 1-1.4.7.212.212 0 0 0-.168.183s-.154 4.785-6.571 4.785a7.883 7.883 0 0 1-5.315-2.311s-.406-.41-.084-.344z" transform="translate(-702.375 -70)"/></symbol>
+    <symbol id="icon-vk" viewBox="0 0 30.343 30"><path class="cls-1" d="M679.1 70a15 15 0 1 1-15.171 15A15.086 15.086 0 0 1 679.1 70zm2.8 14.671v-.064a2.373 2.373 0 0 0 1.468-2.421A2.739 2.739 0 0 0 681 79.471c-.3-.044-3.507-.1-4.766-.1a.865.865 0 0 0-.936.983V89.7a1.024 1.024 0 0 0 .936.927h3.343c-.894 0 4.443.265 4.262-3.281a2.774 2.774 0 0 0-1.939-2.676zm-2.659-.685c-.477.025-1.088.077-1.088.077v-2.814s.284-.02.948 0a1.216 1.216 0 0 1 1.4 1.437 1.253 1.253 0 0 1-1.263 1.299zm.334 4.764h-1.425v-2.813s.864-.014 1.422 0A1.382 1.382 0 0 1 681 87.343a1.346 1.346 0 0 1-1.428 1.406z" transform="translate(-663.938 -70)"/></symbol>
+  </svg> <!-- svg спрайт -->
 
   <div class="wrapper">
     <div class="wrapper-inner wrapper-inner--portfolio">
@@ -125,7 +135,7 @@
           <main class="portfolio">
             <h2 class="portfolio__title">Портфолио</h2>
             <section class="portfolio__block">
-              <div class="portfolio__item">
+              <div class="portfolio__item portfolio__item--animated">
                 <div class="portfolio__img">
                   <picture>
                     <source media="(min-width: 1200px)"
@@ -146,7 +156,7 @@
                     Приложение</div>
                 </div>
               </div>
-              <div class="portfolio__item">
+              <div class="portfolio__item portfolio__item--animated">
                 <div class="portfolio__img">
                   <picture>
                     <source media="(min-width: 1200px)"
@@ -167,7 +177,7 @@
                     Лендинг</div>
                 </div>
               </div>
-              <div class="portfolio__item">
+              <div class="portfolio__item portfolio__item--animated">
                 <div class="portfolio__img">
                   <picture>
                     <source media="(min-width: 1200px)"
@@ -188,7 +198,7 @@
                     Корпоративный сайт</div>
                 </div>
               </div>
-              <div class="portfolio__item">
+              <div class="portfolio__item portfolio__item--animated">
                 <div class="portfolio__img">
                   <picture>
                     <source media="(min-width: 1200px)"
@@ -209,7 +219,7 @@
                     Лендинг</div>
                 </div>
               </div>
-              <div class="portfolio__item">
+              <div class="portfolio__item portfolio__item--animated">
                 <div class="portfolio__img">
                   <picture>
                     <source media="(min-width: 1200px)"
