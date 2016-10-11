@@ -58,14 +58,10 @@
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
-  &--mail {
-    background-image: url("../img/icons/icon-letter.svg");
-  }
-  &--tell {
-    background-image: url("../img/icons/icon-phon-small.svg");
-  }
-  &--sk {
-    background-image: url("../img/icons/icon-sk.svg");
+  @each $item in (mail, tell, sk) {
+    &--#{$item} {
+      background-image: url("../img/icons/icon-#{$item}.svg");
+    }
   }
 }
 

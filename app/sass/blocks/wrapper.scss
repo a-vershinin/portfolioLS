@@ -23,9 +23,12 @@
       height: 100%;
       width: 0;
     }
+    @media #{$retina} {
+      background-image: url("../img/bg/bg3@2x.png");
+      background-size: 320px auto;
+    }
   }
 }
-
 @media #{$tablet-point-widths} {
   .wrapper {
     &::after {

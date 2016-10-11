@@ -7,6 +7,14 @@
     clear: both;
   }
 }
+/*Плейсхолдер*/
+%clearfix {
+  &::before, &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
 
 @mixin container() {
   width: $phone-inner-widths; //300
@@ -72,9 +80,31 @@
   }
 }
 
-@mixin absolute-center() {
-  display: absolute;
-  top: 50%;
-  left: 50;
-  transform: translate(-50%,-50%);
+@mixin absolute-center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+@mixin placeholder($color: #000) {
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  &:-moz-placeholder {
+    color: $color;
+  }
+  &::-moz-placeholder {
+    color: $color;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+}
+@mixin cover() {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }

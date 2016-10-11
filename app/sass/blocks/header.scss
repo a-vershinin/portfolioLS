@@ -7,10 +7,10 @@
 }
 .header__inner {
   @include container();
-  @include clearfix();
+  @extend %clearfix;
 }
 .header__top {
-  @include clearfix();
+  @extend %clearfix;
   margin-bottom: 5px;
   background-color: $bg-1;
 }

@@ -19,6 +19,9 @@
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  &--animated {
+
+  }
 }
 .hello__pick {
   position: absolute;
@@ -31,6 +34,9 @@
   background-image: url("../img/content/pre-avatar@1x.png");
   background-repeat: no-repeat;
   background-size: cover;
+  @media #{$retina} {
+    background-image: url("../img/content/pre-avatar@2x.png");
+  }
 }
 .hello__title {
   margin: 0;
