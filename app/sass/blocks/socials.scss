@@ -1,17 +1,23 @@
 .socials {
+  @include ul-reset();
   max-width: 220px;
   font-size: 0;
   text-align: center;
   margin: 0 auto;
 }
-.social__link {
+.social__item {
   @include inline-block($valign: top);
-  width: 32px;
-  height: 31px;
   margin-right: 6px;
   margin-bottom: 8px;
   font-size: 0;
+}
+.social__link {
+  display: block;
+  width: 32px;
+  height: 31px;
+  font-size: 18px;
   text-decoration: none;
+  text-indent: -9999px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

@@ -8,11 +8,11 @@
   @include inline-block($valign: top);
   border-radius: 50%;
   overflow: hidden;
+  max-width: 146px;
+  max-height: 146px;
 }
 .about__photo img {
   display: block;
-  max-width: 146px;
-  max-height: 146px;
 }
 .about__title {
   margin: 0;
@@ -71,7 +71,7 @@
   }
 }
 @media #{$tablet-point-widths} {
-  .about__photo img {
+  .about__photo {
     max-width: 170px;
     max-height: 170px;
   }
@@ -127,8 +127,6 @@
     margin-right: 20px;
   }
   .about__photo {
-  }
-  .about__photo img {
     max-width: 230px;
     max-height: 230px;
   }
