@@ -88,16 +88,9 @@
   .career__title {
     margin-bottom: 20px;
   }
-  .career__left {
-
-  }
   .career__pict {
     max-width: 230px;
     max-height: 230px;
-  }
-  .career__pict img {
-    width: 228px;
-    height: 228px;
   }
   .career__item {
     max-width: 438px;
@@ -126,7 +119,7 @@
     float: left;
   }
   .career__right {
-    width: 438px;
+    width: 62.57%; //438
     float: right;
   }
   .career__item {
@@ -147,10 +140,10 @@
       position: absolute;
       width: 1px;
       background-color: $bg-5;
-      left: -23px;
+      left: -19px;
     }
     &:after {
-      bottom: -22px;
+      bottom: -25px;
       top: 50%;
     }
     &:before {
@@ -179,8 +172,10 @@
   .career__year {
     display: block;
     position: absolute;
-    top: 50px;
-    left: -73px;
+    right: 100%;
+    top: 50%;
+    margin-top: -8px;
+    margin-right: 34px;
     font-size: 18px;
     font-family: $firasans-light;
     &:after {
@@ -207,12 +202,12 @@
 }
 @media #{$desktop-point-widths} {
   .career {
-    width: 700px;
+    width: 74.45%;
     float: right;
   }
-  .career__pict img {
-    width: 220px;
-    height: 220px;
+  .career__pict {
+    max-width: 220px;
+    max-height: 220px;
   }
   .career__block {
     width: 380px;

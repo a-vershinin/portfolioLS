@@ -38,7 +38,6 @@
 @media #{$tablet-point-widths} {
   .header__top {
     margin-bottom: 18px;
-    padding-bottom: 8px;
   }
   .header__img {
     margin-right: 15px;
@@ -51,9 +50,13 @@
     font-family: $firasans-light;
   }
 }
+@media #{$laptop-point-widths} {
+  .header__top {
+    padding-bottom: 8px;
+  }
+}
 @media #{$desktop-point-widths} {
   .header {
     margin-bottom: 25px;
   }
-
 }

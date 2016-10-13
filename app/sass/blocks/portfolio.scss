@@ -1,5 +1,8 @@
 .portfolio {
 }
+.portfolio__block {
+  @include ul-reset();
+}
 .portfolio__title {
   margin: 0;
   margin-bottom: 18px;
@@ -10,9 +13,11 @@
   text-align: center;
   color: $gray-2;
 }
+.portfolio__link {
+  display: block;
+  text-decoration: none;
+}
 .portfolio__item {
-  width: 300px;
-  margin: 0 auto;
   margin-bottom: 20px;
   border-radius: 14px;
   background-color: $bg-1;
@@ -32,15 +37,16 @@
   }
 }
 .portfolio__img {
-  @include inline-block($valign: top);
+  display: block;
+  max-width: 300px;
+  max-height: 234px;
   overflow: hidden;
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
 }
 .portfolio__img img {
   display: block;
-  width: 300px;
-  height: 234px;
+  width: 100%;
 }
 .portfolio__info {
   padding: 15px 17px 15px;
@@ -100,6 +106,7 @@
     margin-left: -20px;
   }
   .portfolio__img {
+    max-height: 178px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }
@@ -111,10 +118,6 @@
     width: 230px;
     margin-left: 20px;
     box-sizing: border-box;
-  }
-  .portfolio__img img {
-    width: 228px;
-    height: 178px;
   }
   .portfolio__caption {
     margin-bottom: 1px;
@@ -156,9 +159,9 @@
     width: 220px;
     border-radius: 10px;
   }
-  .portfolio__img img {
-    width: 220px;
-    height: 172px;
+  .portfolio__img {
+    max-width: 220px;
+    max-height: 172px;
   }
   .portfolio__info {
     padding: 18px 18px 12px;
