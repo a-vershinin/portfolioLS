@@ -132,7 +132,7 @@ gulp.task("favicons", function() {
 gulp.task("extras", function() {
   return gulp.src([
     "app/*.*",
-    "!app/*.html"
+    "!app/**.html"
   ])
   .pipe(gulp.dest("build"));
 });
@@ -175,7 +175,7 @@ gulp.task("build", function(fn) {
     "clean",
     "copy",
     "style",
-    // "images",
+    "images",
     "svg-symbols",
     "js-common",
     "js-libs",

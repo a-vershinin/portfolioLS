@@ -15,11 +15,10 @@ body {
   color: $gray-1;
   background-color: $bg-1;
 }
-img {
+img, video {
   max-width: 100%;
   height: auto;
 }
-
 .visually-hidden {
   @include visually-hidden
 }

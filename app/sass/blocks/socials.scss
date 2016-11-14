@@ -12,12 +12,11 @@
   font-size: 0;
 }
 .social__link {
+  position: relative;
   display: block;
   width: 32px;
   height: 31px;
-  font-size: 18px;
   text-decoration: none;
-  text-indent: -9999px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -25,17 +24,23 @@
   &:last-child {
     margin-right: 0;
   }
-  // &--fb {
-  //   background-image: url("../img/icons/icon-fb@1x.png");
-  //   // background-position: 0;
-  // }
-  // &:hover {
-  //   &.social__link--fb {
-  //     background-image: url("../img/icons/icon-fb-hover@1x.png");
-  //   }
-  // }
+  &--vk, &--fb, &--github, &--tv {
+    & svg {
+      fill: #9c9c9c;
+    }
+  }
+  &:hover {
+    opacity: 1;
+    transform: scale(1.07);
+    transition: transform .5s;
+    & svg {
+      fill: #5d99c3;
+      transition: fill .5s, transform .5s;
+    }
+  }
 }
-@each $item in (fb, vk, tv) {
+
+@each $item in (fb, vk, tv, github) {
   .social__link {
     &--#{$item} {
       background-image: url("../img/icons/icon-#{$item}@1x.png");
@@ -46,7 +51,7 @@
   }
 }
 @media #{$retina} {
-  @each $item in (fb, vk, tv) {
+  @each $item in (fb, vk, tv, github) {
     .social__link {
       &--#{$item} {
         background-image: url("../img/icons/icon-#{$item}@2x.png");

@@ -37,7 +37,13 @@
   font-weight: 300;
   font-family: $firasans-light;
   box-sizing: border-box;
-  transition: all 0.3s ease 0s;
+  transition: all .4s ease;
+  & .fa-phone {
+    font-size: 22px;
+  }
+  & .fa-skype {
+    font-size: 20px;
+  }
 }
 .contacts__link {
   &:hover {
@@ -50,21 +56,10 @@
 .contacts__icon-view {
   content: "";
   position: absolute;
-  top: 11px;
+  top: 12px;
   left: 80px;
-  width: 19px;
-  height: 19px;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-  @each $item in (mail, tell, sk) {
-    &--#{$item} {
-      background-image: url("../img/icons/icon-#{$item}.svg");
-    }
-  }
+  transform: scale(1.2);
 }
-
 @media #{$tablet-point-widths} {
   .contacts__list {
     @include clearfix();
@@ -78,7 +73,8 @@
     padding-left: 65px;
   }
   .contacts__icon-view {
-    left: 25px;
+    left: 30px;
+    top: 10px;
   }
 }
 
@@ -119,7 +115,6 @@
     display: none;
     top: 67px;
     right: 0;
-    // width: 193px;
     width: 210px;
     height: 143px;
     border: 1px solid #dedede;

@@ -19,7 +19,7 @@
   <link href="favicons/manifest.json" rel="manifest">
   <link href="favicons/safari-pinned-tab.svg" rel="mask-icon" color="#5bbad5">
   <!-- CSS-->
-  <link href="css/libs.css" rel="stylesheet">
+  <link href="css/libs.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -42,17 +42,22 @@
     браузер. Пожалуйста <a href="http://browsehappy.com/">обновите</a> его.</p>
   [endif] -->
 
+   <!-- svg спрайт -->
   <svg display="none">
-    <symbol id="icon-download" viewBox="0 0 14 14"><text data-name="&#xF019;" class="cls-1" x="6.867" y="13.467"><tspan x="6.867">&#xF019;</tspan></text></symbol>
-    <symbol id="icon-fb" viewBox="0 0 30.344 30"><path class="cls-1" d="M641.171 70A15 15 0 1 1 626 85a15.086 15.086 0 0 1 15.171-15zm-3.314 14.9h1.272v6.2h2.823v-6.2h1.994l.542-2.3h-2.653a1.714 1.714 0 0 1 .186-1.316 1.553 1.553 0 0 1 1.033-.325 2.8 2.8 0 0 1 1.333.5l.572-2.029a8.308 8.308 0 0 0-2.36-.519 4.283 4.283 0 0 0-2 .4 2.278 2.278 0 0 0-1.069 1.17 3.829 3.829 0 0 0-.327 1.814v.3H637.9z" transform="translate(-626 -70)"/></symbol>
-    <symbol id="icon-mail" viewBox="0 0 19 15"><text data-name="&#xF0E0;" class="cls-1" x="-.133" y="13.466">&#xF0E0;</text></symbol>
-    <symbol id="icon-phon-red" viewBox="0 0 32 32"><text data-name="&#xF095;" class="cls-1" x="-.133" y="32.467">&#xF095;</text></symbol>
-    <symbol id="icon-phon" viewBox="0 0 32 32"><text data-name="&#xF095;" class="cls-1" x="-.133" y="32.467">&#xF095;</text></symbol>
-    <symbol id="icon-sk" viewBox="0 0 16 17"><text data-name="&#xF17E;" class="cls-1" x="-.133" y="15.467">&#xF17E;</text></symbol>
-    <symbol id="icon-tell" viewBox="0 0 15 16"><text data-name="&#xF095;" class="cls-1" x="-.133" y="15.467">&#xF095;</text></symbol>
-    <symbol id="icon-tv" viewBox="0 0 30.344 30"><path class="cls-1" d="M717.552 70a15 15 0 1 1-15.171 15 15.087 15.087 0 0 1 15.171-15zm-6.98 17.04a13.266 13.266 0 0 0 2.625.612 1.491 1.491 0 0 0 1.735-.652.311.311 0 0 0-.084-.482s-2.942-.324-2.718-.835c0 0-.014-.288.392-.223 0 0 .568-1.031.343-1.162 0 0-.35-.289-.07-.315 0 0 .825.1 1.091.17 0 0 .182-.062.014-.18a.9.9 0 0 1-.392-.436s.1-.223.546-.039c0 0 .25-.253.124-.383 0 0-.378-.21-.2-.38 0 0 .854-1 1.805.58 0 0 .239.3.267.013 0 0 1.164-3.1 2.691-3.35a.869.869 0 0 0 .588-.053.779.779 0 0 1 .571-.025.229.229 0 0 0 .308.079s.6-.223.421.144a2.776 2.776 0 0 1-.787.609c-.211.012-.168.278.014.3 0 0 2.52.17 2.52 1.926 0 0 .147.417.623-.015a5.333 5.333 0 0 1 .9-.45s.2-.118.168.158a3.287 3.287 0 0 1-1.051 1.075s-.322.38.14.3a2.97 2.97 0 0 0 .66-.2s.546-.249.294.2a7.216 7.216 0 0 1-1.4.7.212.212 0 0 0-.168.183s-.154 4.785-6.571 4.785a7.883 7.883 0 0 1-5.315-2.311s-.406-.41-.084-.344z" transform="translate(-702.375 -70)"/></symbol>
-    <symbol id="icon-vk" viewBox="0 0 30.343 30"><path class="cls-1" d="M679.1 70a15 15 0 1 1-15.171 15A15.086 15.086 0 0 1 679.1 70zm2.8 14.671v-.064a2.373 2.373 0 0 0 1.468-2.421A2.739 2.739 0 0 0 681 79.471c-.3-.044-3.507-.1-4.766-.1a.865.865 0 0 0-.936.983V89.7a1.024 1.024 0 0 0 .936.927h3.343c-.894 0 4.443.265 4.262-3.281a2.774 2.774 0 0 0-1.939-2.676zm-2.659-.685c-.477.025-1.088.077-1.088.077v-2.814s.284-.02.948 0a1.216 1.216 0 0 1 1.4 1.437 1.253 1.253 0 0 1-1.263 1.299zm.334 4.764h-1.425v-2.813s.864-.014 1.422 0A1.382 1.382 0 0 1 681 87.343a1.346 1.346 0 0 1-1.428 1.406z" transform="translate(-663.938 -70)"/></symbol>
-  </svg> <!-- svg спрайт -->
+    <symbol id="icon-fb" viewbox="0 0 30.344 30"><path
+      d="M641.171 70A15 15 0 1 1 626 85a15.086 15.086 0 0 1 15.171-15zm-3.314 14.9h1.272v6.2h2.823v-6.2h1.994l.542-2.3h-2.653a1.714 1.714 0 0 1 .186-1.316 1.553 1.553 0 0 1 1.033-.325 2.8 2.8 0 0 1 1.333.5l.572-2.029a8.308 8.308 0 0 0-2.36-.519 4.283 4.283 0 0 0-2 .4 2.278 2.278 0 0 0-1.069 1.17 3.829 3.829 0 0 0-.327 1.814v.3H637.9z"
+      transform="translate(-626 -70)"/></symbol>
+    <symbol id="icon-github" viewbox="0 0 47.999998 48.000002"><path
+      d="M23.928 1.15C11 1.15.514 11.638.514 24.566c0 10.343 6.75 19.105 15.945 22.265 1.148.144 1.58-.574 1.58-1.15v-4.02c-6.465 1.436-7.902-3.16-7.902-3.16-1.005-2.73-2.586-3.45-2.586-3.45-2.154-1.435.144-1.435.144-1.435 2.298.144 3.59 2.442 3.59 2.442 2.156 3.59 5.46 2.586 6.753 2.01.142-1.58.86-2.585 1.435-3.16-5.17-.574-10.63-2.585-10.63-11.635 0-2.585.862-4.596 2.442-6.32-.287-.575-1.005-3.017.288-6.177 0 0 2.01-.574 6.464 2.442 1.866-.574 3.877-.718 5.888-.718 2.01 0 4.022.286 5.89.717 4.453-3.016 6.464-2.442 6.464-2.442 1.293 3.16.43 5.602.287 6.177a9.29 9.29 0 0 1 2.44 6.32c0 9.05-5.458 10.918-10.63 11.492.863.718 1.58 2.155 1.58 4.31v6.464c0 .574.432 1.292 1.58 1.15 9.338-3.16 15.946-11.924 15.946-22.266-.143-12.785-10.63-23.27-23.558-23.27z"
+      clip-rule="evenodd" fill-rule="evenodd"/></symbol>
+    <symbol id="icon-vk" viewbox="0 0 30.343 30"><path
+      d="M679.1 70a15 15 0 1 1-15.171 15A15.086 15.086 0 0 1 679.1 70zm2.8 14.671v-.064a2.373 2.373 0 0 0 1.468-2.421A2.739 2.739 0 0 0 681 79.471c-.3-.044-3.507-.1-4.766-.1a.865.865 0 0 0-.936.983V89.7a1.024 1.024 0 0 0 .936.927h3.343c-.894 0 4.443.265 4.262-3.281a2.774 2.774 0 0 0-1.939-2.676zm-2.659-.685c-.477.025-1.088.077-1.088.077v-2.814s.284-.02.948 0a1.216 1.216 0 0 1 1.4 1.437 1.253 1.253 0 0 1-1.263 1.299zm.334 4.764h-1.425v-2.813s.864-.014 1.422 0A1.382 1.382 0 0 1 681 87.343a1.346 1.346 0 0 1-1.428 1.406z"
+      transform="translate(-663.938 -70)"/></symbol>
+    <symbol id="icon-tv" viewBox="0 0 32 32"><path d="M16 31.625C7.384 31.625.375 24.615.375 16S7.384.375 16 .375c8.615 0 15.625 7.01 15.625 15.625S24.615 31.625 16 31.625z"/><path d="M16 .75C24.409.75 31.25 7.591 31.25 16S24.409 31.25 16 31.25.75 24.409.75 16 7.591.75 16 .75M16 0C7.163 0 0 7.163 0 16c0 8.836 7.163 16 16 16s16-7.164 16-16c0-8.837-7.163-16-16-16z"/><path
+      d="M18.226 8.886c-1.59.579-2.595 2.071-2.481 3.704l.038.63-.636-.077c-2.315-.296-4.338-1.299-6.056-2.984l-.84-.836-.215.617c-.458 1.376-.165 2.83.789 3.808.509.54.394.617-.483.296-.305-.103-.573-.18-.598-.141-.089.09.216 1.26.458 1.724.331.644 1.005 1.273 1.743 1.647l.624.296-.739.011c-.712 0-.738.013-.661.284.254.836 1.259 1.724 2.379 2.11l.789.27-.687.412a7.122 7.122 0 0 1-3.41.951c-.573.013-1.044.064-1.044.103 0 .128 1.553.848 2.455 1.132 2.71.836 5.929.475 8.346-.952 1.718-1.016 3.435-3.036 4.237-4.992.433-1.041.865-2.945.865-3.858 0-.592.038-.669.75-1.376.42-.412.814-.862.891-.99.128-.245.114-.245-.534-.026-1.081.386-1.234.335-.699-.244.394-.412.865-1.158.865-1.376 0-.038-.191.026-.407.141-.229.129-.738.322-1.12.437l-.687.219-.623-.426c-.344-.231-.826-.489-1.081-.566-.65-.18-1.642-.154-2.228.052z"
+      fill="#333"/></symbol>
+  </svg>
+
 
   <div class="wrapper">
     <div class="wrapper-inner wrapper-inner--portfolio">
@@ -85,19 +90,19 @@
               <ul class="contacts__list">
                 <li class="contacts__item">
                   <a href="mailto:cata07@yandex.ru" class="contacts__link contacts__link--mail">
-                    <i class="contacts__icon-view contacts__icon-view--mail"></i>
+                    <i class="fa fa-envelope contacts__icon-view contacts__icon-view--mail"></i>
                     cata07@yandex.ru
                   </a>
                 </li>
                 <li class="contacts__item">
                   <a href="tel:+380990070886" class="contacts__link">
-                    <i class="contacts__icon-view contacts__icon-view--tell"></i>
+                    <i class="fa fa-phone contacts__icon-view contacts__icon-view--tell"></i>
                     +38 099 007 08 86
                   </a>
                 </li>
                 <li class="contacts__item">
                   <a href="skype:cata073?chat" class="contacts__link">
-                    <i class="contacts__icon-view contacts__icon-view--sk"></i>
+                    <i class="fa fa-skype contacts__icon-view contacts__icon-view--sk"></i>
                     cata073
                   </a>
                 </li>
@@ -128,7 +133,6 @@
                     <span class="nav__link-text">Портфолио</span>
                   </a>
                 </li>
-                </li>
               </ul>
             </nav>
           </aside>
@@ -136,7 +140,7 @@
             <h2 class="portfolio__title">Портфолио</h2>
             <ul class="portfolio__block">
               <li class="portfolio__item portfolio__item--animated">
-                <a class="portfolio__link" href="#" target="_blank">
+                <a class="portfolio__link" href="http://kupruc.tmweb.ru/projects/burger-shop/index.html" target="_blank">
                   <div class="portfolio__img">
                     <picture>
                       <source media="(min-width: 1200px)"
@@ -150,16 +154,16 @@
                     </picture>
                   </div>
                   <div class="portfolio__info">
-                    <h4 class="portfolio__caption">Deals App</h4>
-                    <div class="portfolio__text">Продажа одежды</div>
+                    <h4 class="portfolio__caption">Burger Shop</h4>
+                    <div class="portfolio__text">Markup, jQuery, Adaptiv, Retina, SVG, OnePageScroll, Yandex API map</div>
                     <div class="portfolio__type">
                       <i class="portfolio__icon portfolio__icon--mobile"></i>
-                      Приложение</div>
+                      Лендинг</div>
                   </div>
                 </a>
               </li>
               <li class="portfolio__item portfolio__item--animated">
-                <a class="portfolio__link" href="#" target="_blank">
+                <a class="portfolio__link" href="http://kupruc.tmweb.ru/projects/gllacy/index.html" target="_blank">
                   <div class="portfolio__img">
                     <picture>
                       <source media="(min-width: 1200px)"
@@ -173,16 +177,16 @@
                     </picture>
                   </div>
                   <div class="portfolio__info">
-                    <h4 class="portfolio__caption">Dream-scapes</h4>
-                    <div class="portfolio__text">Лагуна Люфтганза</div>
+                    <h4 class="portfolio__caption">Gllacy Shop</h4>
+                    <div class="portfolio__text">Markup, Retina, SVG, Vanilla JS, Google API map</div>
                     <div class="portfolio__type">
                       <i class="portfolio__icon portfolio__icon--desktop"></i>
-                      Лендинг</div>
+                      Интернет-магазин</div>
                   </div>
                 </a>
               </li>
               <li class="portfolio__item portfolio__item--animated">
-                <a class="portfolio__link" href="#" target="_blank">
+                <a class="portfolio__link" href="http://kupruc.tmweb.ru/projects/technomart/index.html" target="_blank">
                   <div class="portfolio__img">
                     <picture>
                       <source media="(min-width: 1200px)"
@@ -196,16 +200,16 @@
                     </picture>
                   </div>
                   <div class="portfolio__info">
-                    <h4 class="portfolio__caption">Creative studio</h4>
-                    <div class="portfolio__text">Танцевальная студия</div>
+                    <h4 class="portfolio__caption">Technomart</h4>
+                    <div class="portfolio__text">Markup, Vanilla JS, Google API map</div>
                     <div class="portfolio__type">
                       <i class="portfolio__icon portfolio__icon--desktop"></i>
-                      Корпоративный сайт</div>
+                      Интернет-магазин</div>
                   </div>
                 </a>
               </li>
               <li class="portfolio__item portfolio__item--animated">
-                <a class="portfolio__link" href="#" target="_blank">
+                <a class="portfolio__link" href="http://kupruc.tmweb.ru/projects/biruang/index.html" target="_blank">
                   <div class="portfolio__img">
                     <picture>
                       <source media="(min-width: 1200px)"
@@ -219,16 +223,16 @@
                     </picture>
                   </div>
                   <div class="portfolio__info">
-                    <h4 class="portfolio__caption">Studio Frog</h4>
-                    <div class="portfolio__text">Мебельный магазин</div>
+                    <h4 class="portfolio__caption">Biruang</h4>
+                    <div class="portfolio__text">Markup, Adaptiv, jQuery Plugins, Google API map</div>
                     <div class="portfolio__type">
                       <i class="portfolio__icon portfolio__icon--desktop"></i>
-                      Лендинг</div>
+                      Интернет-магазин</div>
                   </div>
                 </a>
               </li>
               <li class="portfolio__item portfolio__item--animated">
-                <a class="portfolio__link" href="#" target="_blank">
+                <a class="portfolio__link" href="http://kupruc.tmweb.ru/projects/sedona/index.html" target="_blank">
                   <div class="portfolio__img">
                     <picture>
                       <source media="(min-width: 1200px)"
@@ -242,8 +246,8 @@
                     </picture>
                   </div>
                   <div class="portfolio__info">
-                    <h4 class="portfolio__caption">Carbonara</h4>
-                    <div class="portfolio__text">Итальянсий ресторан</div>
+                    <h4 class="portfolio__caption">Sedona</h4>
+                    <div class="portfolio__text">Markup, Google API map</div>
                     <div class="portfolio__type">
                       <i class="portfolio__icon portfolio__icon--desktop"></i>
                       Лендинг</div>
@@ -264,13 +268,32 @@
       <div class="footer__socials">
         <ul class="socials">
           <li class="social__item">
-            <a class="social__link social__link--fb" href="https://facebook.com/profile.php?id=100008609447050" target="_blank">Я в Фейсбуке</a>
+            <a class="social__link social__link--fb" href="https://facebook.com/profile.php?id=100008609447050" target="_blank">Я в Фейсбуке
+              <svg width="32" height="31">
+                <use xlink:href="img/svg-symbols.svg#icon-fb"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--vk" href="https://vk.com/id12910709" target="_blank">Я в Вконтакте</a>
+            <a class="social__link social__link--vk" href="https://vk.com/id12910709" target="_blank">Я в Вконтакте
+              <svg width="32" height="31">
+                <use xlink:href="/img/svg-symbols.svg#icon-vk"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--tv" href="#" target="_blank">Я в Твитере</a>
+            <a class="social__link social__link--tv" href="#" target="_blank">Я в Твитере
+              <svg width="32" height="31">
+                <use xlink:href="/img/svg-symbols.svg#icon-tv"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--github" href="https://github.com/A-Vershinin" target="_blank">Я в Git
+              <svg width="32" height="31">
+                <use xlink:href="/img/svg-symbols.svg#icon-github"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>

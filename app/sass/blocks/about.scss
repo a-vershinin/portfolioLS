@@ -47,7 +47,6 @@
   @include inline-block($valign: top);
   padding: 8px 25px;
   font-size: 14px;
-  // @include openSans;
   @include firaSans($style:bold);
   text-decoration: none;
   font-weight: 700;
@@ -105,7 +104,7 @@
     text-align: left;
   }
   .about__text {
-    height: 375px;
+    height: 475px;
     overflow: auto;
     padding-left: 0;
     margin-right: 35px;
@@ -134,7 +133,7 @@
     width: 380px;
   }
   .about__text {
-    height: 330px;
+    height: 530px;
     margin-right: 0;
     margin-bottom: 50px;
   }

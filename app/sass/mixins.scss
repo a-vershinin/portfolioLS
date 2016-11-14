@@ -15,7 +15,13 @@
     clear: both;
   }
 }
+@mixin container() {
+  width: 940px;
+  width: $desktop-max-widths;
+  margin: 0 auto;
+  padding: 0 10px;
 
+}
 @mixin container() {
   width: $phone-inner-widths; //300
   margin: 0 auto;
@@ -79,6 +85,16 @@
   .selector {
   }
 }
+// @media #{$retina} {
+//   .about-blog  {
+//     background-image: url("../img/bg3@2x.png");
+//   }
+//   .about-form  {
+//     background-image: url("../img/bg4@2x.png");
+//   }
+// }
+
+
 
 @mixin absolute-center {
   position: absolute;

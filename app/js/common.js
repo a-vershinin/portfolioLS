@@ -2,6 +2,6 @@
 
 (function() { //область видимости
 
-  console.log("Js подключён");
+  // console.log("Js подключён");
 
 })();
