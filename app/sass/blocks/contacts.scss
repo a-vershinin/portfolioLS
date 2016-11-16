@@ -70,7 +70,7 @@
     width: 50%;
   }
   .contacts__link {
-    padding-left: 65px;
+    padding-left: 55px;
   }
   .contacts__icon-view {
     left: 30px;
@@ -115,7 +115,7 @@
     display: none;
     top: 67px;
     right: 0;
-    width: 210px;
+    width: 265px;
     height: 143px;
     border: 1px solid #dedede;
     border-radius: 10px;
@@ -130,7 +130,7 @@
   .contacts__list::after {
     content: '';
     position: absolute;
-    left: 85px;
+    left: 220px;
     top: -20px;
     border: 10px solid transparent;
     border-bottom: 10px solid #dedede;

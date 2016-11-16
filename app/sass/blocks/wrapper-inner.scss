@@ -25,7 +25,7 @@
 }
 @media #{$laptop-point-widths} {
   .wrapper-inner {
-    padding-bottom: 50px;
+    padding-bottom: 0;
     &--portfolio {
       padding-bottom: 0;
     }
@@ -39,6 +39,6 @@
 }
 @media #{$desktop-point-widths} {
   .wrapper-inner {
-    padding-bottom: 72px;
+    // padding-bottom: 72px;
   }
 }

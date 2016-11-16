@@ -31,11 +31,12 @@
   width: 105px;
   height: 105px;
   font-size: 0;
-  background-image: url("../img/content/pre-avatar@1x.png");
+  background-image: url("../img/content/logo@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 50%;
   @media #{$retina} {
-    background-image: url("../img/content/pre-avatar@2x.png");
+    background-image: url("../img/content/logo@1x.jpg");
   }
 }
 .hello__title {
