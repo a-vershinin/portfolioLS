@@ -1,0 +1,39 @@
+.education__list {
+  @include ul-reset();
+}
+.education__item {
+  @extend %clearfix;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.education__icon {
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+  margin-right: 20px;
+  padding-top: 10px;
+  color: $blue-2;
+}
+.education__block {
+  float: left;
+  width: 82%;
+}
+.education__title,
+.education__name,
+.experience__time {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: left;
+  font-family: $firasans-regular;
+}
+@media #{$tablet-point-widths} {
+
+}
+@media #{$laptop-point-widths} {
+  .education__block {
+    width: 75%;
+  }
+}
+@media #{$desktop-point-widths} {
+
+}

@@ -1,18 +1,18 @@
 {
-  "name": "gllacy",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "description": "Личный проект Gllacy для HTML академии",
+  "description": "Личный сайт-portfolio с моими работами",
   "author": "Anatoliy Vershinin",
   "main": "gulpfile.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:A-Vershinin/81582-gllacy.git"
+    "url": ""
   },
   "bugs": {
-    "url": "https://github.com/A-Vershinin/81582-gllacy/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/A-Vershinin/81582-gllacy",
+  "homepage": "",
   "devDependencies": {
     "autoprefixer": "6.3.6",
     "browser-sync": "2.12.10",

@@ -2,7 +2,10 @@
   text-align: center;
 }
 .about__left {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+.about__right {
+  @extend %clearfix;
 }
 .about__photo {
   @include inline-block($valign: top);
@@ -14,10 +17,19 @@
 .about__photo img {
   display: block;
 }
+.about__block {
+  width: 100%;
+  margin-bottom: 25px;
+  padding: 15px 25px;
+  border: 2px solid $gray-6;
+  border-radius: 5px;
+  box-shadow: 0 0 6px $blue-5;
+  box-sizing: border-box;
+}
 .about__title {
   margin: 0;
   padding: 0;
-  margin-bottom: 3px;
+  margin-bottom: 15px;
   font-size: 35px;
   line-height: 1.285; // 45
   font-weight: 500;
@@ -25,18 +37,34 @@
   text-align: center;
   color: $gray-2;
 }
-.about__text {
-  margin-bottom: 25px;
-  & p {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 5px;
-    font-size: 16px;
-    line-height: 1.5; // 24
-    font-weight: 300;
-    font-family: $firasans-light;
-    text-align: left;
-    color: $gray-4;
+.about__info {
+  margin-bottom: 30px;
+}
+.about__list {
+  @include ul-reset();
+}
+.about__item {
+  margin-bottom: 10px;
+  text-align: left;
+  @extend %clearfix;
+  & span:first-child {
+    margin-right: 10px;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: $firasans-bold;
+  }
+  span {
+    font-size: 18px;
+    line-height: 25px;
+    font-family: $firasans-regular;
+  }
+  .about__skills {
+    float: left;
+    width: 35%;
+  }
+  .skills {
+    float: left;
+    width: 60%;
   }
 }
 .about__download {
@@ -74,45 +102,27 @@
     max-width: 170px;
     max-height: 170px;
   }
-  .about__text {
-    height: 370px;
-    padding: 0 20px;
-    margin-bottom: 31px;
-    overflow-y: scroll;
-    & p {
-      font-size: 18px;
-      line-height: 1.444; // 26
-      margin-bottom: 10px;
-    }
-  }
 }
 @media #{$laptop-point-widths} {
   .about {
     @include clearfix();
   }
   .about__left {
+    width: 24%;
     float: left;
-    width: 228px;
-    margin-right: 20px;
+    margin-right: 3%;
   }
   .about__right {
     float: left;
-    width: 480px;
+    width: calc(100% - 27%);
   }
   .about__title {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-align: left;
   }
-  .about__text {
-    height: 475px;
-    overflow: auto;
-    padding-left: 0;
-    margin-right: 35px;
-    margin-bottom: 47px;
-  }
-  .about__download {
-    margin-right: 65px;
-    text-align: right;
+  .about__block {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 @media #{$desktop-point-widths} {
@@ -122,22 +132,14 @@
     width: 700px;
   }
   .about__left {
-    width: 300px;
-    margin-right: 20px;
+    width: 42%;
+    margin-right: 3%;
   }
   .about__photo {
     max-width: 230px;
     max-height: 230px;
   }
   .about__right {
-    width: 380px;
-  }
-  .about__text {
-    height: 530px;
-    margin-right: 0;
-    margin-bottom: 50px;
-  }
-  .about__download {
-    margin-right: 0;
+    width: 55%;
   }
 }

@@ -1,7 +1,16 @@
 "use strict"; // ES5
 
-(function() { //область видимости
+(function() {
 
-  // console.log("Js подключён");
+
+  contactToggle();
+  function contactToggle() {
+    var trigger = $(".contacts");
+    var contactWrap = $(".contacts__wrapper");
+    trigger.on("click", function() {
+      trigger.toggleClass('contacts--closed');
+    });
+  }
+
 
 })();

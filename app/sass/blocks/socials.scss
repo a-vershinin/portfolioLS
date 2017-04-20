@@ -40,31 +40,8 @@
   }
 }
 
-@each $item in (fb, vk, tv, github) {
-  .social__link {
-    &--#{$item} {
-      background-image: url("../img/icons/icon-#{$item}@1x.png");
-      &:hover {
-        background-image: url("../img/icons/icon-#{$item}-hover@1x.png");
-      }
-    }
-  }
-}
-@media #{$retina} {
-  @each $item in (fb, vk, tv, github) {
-    .social__link {
-      &--#{$item} {
-        background-image: url("../img/icons/icon-#{$item}@2x.png");
-        &:hover {
-          background-image: url("../img/icons/icon-#{$item}-hover@2x.png");
-        }
-      }
-    }
-  }
-}
 @media #{$tablet-point-widths} {
   .social__link {
     margin-bottom: 0;
   }
-
 }

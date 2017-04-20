@@ -1,0 +1,27 @@
+.skills {
+  @include ul-reset();
+}
+.skills__item {
+  display: inline-block;
+  margin-bottom: 7px;
+  margin-right: 7px;
+  padding: 3px 12px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #fff;
+  border-radius: 5px;
+  background-image: linear-gradient(to top, #2e8ca2 0, #2e8ca2 52%, #3ba8c0 53%, #3ba8c0 100%)
+}
+@media #{$tablet-point-widths} {
+
+}
+@media #{$laptop-point-widths} {
+  .skills__item {
+    padding: 5px 15px;
+    font-size: 16px;
+  }
+}
+@media #{$desktop-point-widths} {
+
+}

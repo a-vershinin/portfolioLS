@@ -17,6 +17,7 @@
 .header__logo {
   float: left;
   padding-top: 10px;
+  margin-bottom: 10px;
 }
 .header__img {
   @include inline-block($valign: middle);

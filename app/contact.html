@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width-device-width, initial-scale=1, maximum-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <title>Портфолио - Обо мне</title>
+  <title>Портфолио - Контакты</title>
   <!-- SEO -->
   <meta name="description" content="Личный сайт портфолио, на котором можно познакомится со мной и посмотреть работы">
   <meta name="keywords" content="Портфолио">
@@ -46,7 +46,7 @@
   </svg> <!-- svg спрайт -->
 
   <div class="wrapper">
-    <div class="wrapper-inner">
+    <div class="wrapper-inner wrapper-inner--career">
       <header class="header">
         <div class="header__inner">
           <h1 class="visually-hidden">Портфолио - личный сайт</h1>
@@ -55,13 +55,13 @@
               <div class="header__img">
                 <a href="index.html">
                   <picture>
-                    <img srcset="img/content/logo@2x.jpg 2x" wid
-                      src="img/content/logo@1x.jpg" alt="фото">
+                    <img srcset="img/content/logo@2x.jpg 2x"
+                      src="img/content/logo@1x.jpg" alt="Анатолий Вершинин">
                   </picture></a>
               </div>
               <div class="header__desc">Анатолий Вершинин</div>
             </div>
-            <div class="contacts contacts--closed">
+            <div class="contacts  contacts--closed contacts--nojs">
               <a class="contacts__toggle">Мои контакты
                 <svg width="32" height="31">
                   <use xlink:href="img/svg-symbols.svg#icon-phone"></use>
@@ -94,11 +94,11 @@
         </div>
       </header>
       <section class="page-content">
-          <aside class="sidebar">
-            <nav class="nav">
+          <aside class="sidebar sidebar--career">
+            <nav class="nav nav--career">
               <ul class="nav__list">
                 <li class="nav__item">
-                  <a class="nav__link nav__link--active">
+                  <a href="about.html" class="nav__link">
                     <i class="nav__link-icon fa fa-user-secret"></i>
                     <span class="nav__link-text">Обо мне</span>
                   </a>
@@ -109,133 +109,62 @@
                     <span class="nav__link-text">Портфолио</span>
                   </a>
                 </li>
-                <!-- <li class="nav__item">
-                  <a href="contact.html" class="nav__link">
-                    <i class="nav__link-icon fa fa-user"></i>
+                <li class="nav__item">
+                  <a class="nav__link nav__link--active">
+                    <i class="nav__link-icon fa fa-rocket"></i>
                     <span class="nav__link-text">Связаться со мной</span>
                   </a>
-                </li> -->
+                </li>
               </ul>
             </nav>
           </aside>
-          <main class="about">
-            <div class="about__left">
-              <div class="about__photo">
+          <main class="career">
+            <h2 class="career__title">Карьерный путь</h2>
+            <div class="career__left">
+              <div class="career__pict">
                 <picture>
-                  <img srcset="img/content/about-me@2x.jpg 2x"
-                  src="img/content/about-me@1x.jpg" alt="фото">
+                  <img srcset="img/content/career1@2x.png 2x"
+                    src="img/content/career1@1x.png" alt="фото">
                 </picture>
               </div>
             </div>
-            <div class="about__right">
-              <div class="about__block">
-                <h2 class="about__title">Основная информация</h2>
-                <div class="about__info">
-                  <ul class="about__list">
-                    <li class="about__item">
-                      <span>Меня зовут:</span>
-                      <span>Анатолий Вершинин</span>
-                    </li>
-                    <li class="about__item">
-                      <span>Возраст:</span>
-                      <span>26 лет</span>
-                    </li>
-                    <li class="about__item">
-                      <span>Специализация:</span>
-                      <span>Веб-разработка</span>
-                    </li>
-                    <li class="about__item">
-                      <span class="about__skills">Ключевые навыки:</span>
-                      <ul class="skills">
-                        <li class="skills__item">HTML5</li>
-                        <li class="skills__item">CSS3</li>
-                        <li class="skills__item">PUG</li>
-                        <li class="skills__item">SASS</li>
-                        <li class="skills__item">GULP</li>
-                        <li class="skills__item">JS(jQuery)</li>
-                        <li class="skills__item">Bootstrap</li>
-                        <li class="skills__item">Git</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <!-- <div class="about__block">
-                <h2 class="about__title">Опыт работы</h2>
-                <ul class="education__list">
-                  <li class="education__item">
-                    <div class="education__icon">
-                      <i class="fa fa-briefcase" aria-hidden="true"></i>
-                    </div>
-                    <div class="education__block">
-                      <div class="education__title">ООО "Isabella" - Продавец-консултант</div>
-                      <div class="experience__time">Январь 2016 - Ноябрь 2016</div>
-                    </div>
-                  </li>
-                  <li class="education__item">
-                    <div class="education__icon">
-                      <i class="fa fa-briefcase" aria-hidden="true"></i>
-                    </div>
-                    <div class="education__block">
-                      <div class="education__title">ООО "50 Герц" - Менеджер по продажам</div>
-                      <div class="experience__time">Май 2015 - Январь 2016</div>
-                    </div>
-                  </li>
-                  <li class="education__item">
-                    <div class="education__icon">
-                      <i class="fa fa-briefcase" aria-hidden="true"></i>
-                    </div>
-                    <div class="education__block">
-                      <div class="education__title">ООО "Электробазар" - Продавец-консултант</div>
-                      <div class="experience__time">Сентябрь 2013 - Май 2015</div>
-                    </div>
-                  </li>
-                </ul>
-              </div> -->
-              <div class="about__block">
-                <h2 class="about__title">Образование</h2>
-                <ul class="education__list">
-                  <li class="education__item">
-                    <div class="education__icon">
-                      <i class="fa fa-file-text-o education__icon" aria-hidden="true"></i>
-                    </div>
-                    <div class="education__block">
-                      <div class="education__title">Spalah IT-School</div>
-                      <div class="education__name">JavaScript</div>
-                      <div class="experience__time">2017</div>
-                    </div>
-                  </li>
-                  <li class="education__item">
-                    <div class="education__icon">
-                      <i class="fa fa-file-text-o education__icon" aria-hidden="true"></i>
-                    </div>
-                    <div class="education__block">
-                      <div class="education__title">Loftschool</div>
-                      <div class="education__name">Веб-разработка для начинающих</div>
-                      <div class="experience__time">2016</div>
-                    </div>
-                  </li>
-                  <li class="education__item">
-                    <div class="education__icon">
-                      <i class="fa fa-file-text-o education__icon" aria-hidden="true"></i>
-                    </div>
-                    <div class="education__block">
-                      <div class="education__title">HTML Acadamy</div>
-                      <div class="education__name">Интенсивные онлайн‑курсы «HTML и CSS»</div>
-                      <div class="experience__time">2016</div>
-                    </div>
-                  </li>
-                  <li class="education__item">
-                    <div class="education__icon">
-                      <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                    </div>
-                    <div class="education__block">
-                      <div class="education__title">Высшее образование, УкрДУЗТ, г. Харьков, специальность "Автоматика и автоматизация на транспорте", квалификация "Инжинер по автоматике на транспорте"</div>
-                      <div class="experience__time">2007 - 2012</div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+            <div class="career__right">
+              <ul class="career__list">
+                <li class="career__item">
+                  <div class="career__block">
+                    <div class="career__suptitle">ООО «Isabella»</div>
+                    <div class="career__occupation">Продавец-консультант</div>
+                    <div class="career__date">Январь 2016 - Ноябрь 2016</div>
+                    <div class="career__year">2016</div>
+                  </div>
+                </li>
+                <li class="career__item career__item--active">
+                  <div class="career__block">
+                    <div class="career__suptitle">ООО «50 Герц»</div>
+                    <div class="career__occupation">Менеджер по продажам</div>
+                    <div class="career__date">Май 2015 - Январь 2016</div>
+                    <div class="career__year">2015</div>
+                  </div>
+                </li>
+                <li class="career__item">
+                  <div class="career__block">
+                    <div class="career__suptitle">ООО «Электробазар»</div>
+                    <div class="career__occupation">Менеджер по логистике</div>
+                    <div class="career__date">Октябрь 2014 - Май 2015</div>
+                    <div class="career__occupation">Продавец-консультант</div>
+                    <div class="career__date">Сентябрь 2013 - Октябрь 2014</div>
+                    <div class="career__year">2014</div>
+                  </div>
+                </li>
+                <li class="career__item">
+                  <div class="career__block">
+                    <div class="career__suptitle">ПАО «Украинские железные дороги»</div>
+                    <div class="career__occupation">Инжинер электромеханик на сортировочной горке</div>
+                    <div class="career__date">Июнь 2012 - Июль 2013</div>
+                    <div class="career__year">2013</div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </main>
       </section>
@@ -280,6 +209,7 @@
         </ul>
       </div>
     </div>
+    <!-- end container -->
   </footer>
 
   <div class="modal-feedback"></div>

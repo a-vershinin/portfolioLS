@@ -73,6 +73,7 @@ gulp.task("JsChange", function () {
 gulp.task("serve", function() {
   server.init({
     server: "build",
+    browser: "chrome",
     notify: false,
     open: true,
     ui: false

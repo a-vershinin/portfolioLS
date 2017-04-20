@@ -124,3 +124,16 @@
   background-position: center center;
   background-repeat: no-repeat;
 }
+
+@media #{$retina} {
+  @each $item in (fb, vk, tv, github) {
+    .social__link {
+      &--#{$item} {
+        background-image: url("../img/icons/icon-#{$item}@2x.png");
+        &:hover {
+          background-image: url("../img/icons/icon-#{$item}-hover@2x.png");
+        }
+      }
+    }
+  }
+}
