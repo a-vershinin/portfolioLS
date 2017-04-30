@@ -62,11 +62,11 @@
   z-index: 30;
   display: none;
   display: block;
-  width: 100%;
   top: 0;
   left: 0;
+  right: 0;
   bottom: 100%;
-  border-radius: 14px;
+  border-radius: 10px;
   background-color: rgba(0, 0, 0, .5);
   transition: .4s;
 }

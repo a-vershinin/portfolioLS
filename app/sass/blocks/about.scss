@@ -20,7 +20,7 @@
 .about__block {
   width: 100%;
   margin-bottom: 25px;
-  padding: 15px 25px;
+  padding: 15px;
   border: 2px solid $gray-6;
   border-radius: 5px;
   box-shadow: 0 0 6px $blue-5;
@@ -121,8 +121,7 @@
     text-align: left;
   }
   .about__block {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 15px 25px;
   }
 }
 @media #{$desktop-point-widths} {
